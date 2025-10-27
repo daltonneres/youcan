@@ -5,42 +5,33 @@
 
   <!-- SEO -->
   <meta name="description" content="Aprenda inglês com gamificação! A You Can oferece aulas dinâmicas, presenciais e online para crianças, adolescentes e adultos." />
-  <meta name="keywords" content="escola de inglês, inglês com gamificação, curso de inglês, inglês online, inglês para crianças, inglês para adolescentes, inglês para adultos, You Can Inglês" />
   <meta name="author" content="You Can Inglês com Gamificação" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (Facebook / WhatsApp) -->
-  <meta property="og:title" content="You Can Inglês com Gamificação" />
-  <meta property="og:description" content="Aprenda inglês com uma metodologia moderna e gamificada. Aulas presenciais e online!" />
-  <meta property="og:image" content="https://seudominio.com/imgs/logo%20-%20inical%20-%20youcan.jpg" />
-  <meta property="og:url" content="https://seudominio.com" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="You Can Inglês com Gamificação" />
-  <meta name="twitter:description" content="Aulas de inglês presenciais e online com gamificação. Transforme o aprendizado em diversão!" />
-  <meta name="twitter:image" content="https://seudominio.com/imgs/logo%20-%20inical%20-%20youcan.jpg" />
-
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="imgs/logo - inical - youcan.png" />
+  <link rel="icon" type="image/png" href="imgs/logoyoucan.png" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- CSS -->
+  <!-- AOS CSS (animações) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Acessibilidade e idioma -->
+  <!-- Idioma e tema -->
   <meta http-equiv="content-language" content="pt-BR" />
   <meta name="theme-color" content="#5c15ea" />
 </head>
+
+<body>
 
 <!-- Cabeçalho -->
 <header class="header">
   <div class="container header-container">
     <a href="#home" class="logo-link">
-      <img src="imgs/logo - inical - youcan.png" 
+      <img src="imgs/logoyoucan.png" 
            alt="Logo You Can Inglês com Gamificação" 
            title="Logo You Can Inglês com Gamificação" 
            class="logo" />
@@ -51,17 +42,20 @@
       ☰
     </button>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="#home" class="active">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+<nav class="nav">
+  <ul>
+    <li><a href="#home" class="active">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#institucional">Institucional</a></li>
+    <li><a href="#cursos">Cursos</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#equipe">Equipe</a></li>
+    <li><a href="#aula-experimental">Aula Experimental</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
 
     <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">
       Fale Conosco
@@ -85,6 +79,74 @@
       <p>A You Can é uma escola de inglês com metodologia gamificada, que transforma o ensino em uma experiência divertida e eficaz. Atuamos com turmas presenciais e online, para crianças, adolescentes e adultos.</p>
     </div>
   </section>
+
+  <!-- Institucional -->
+<section id="institucional" class="institucional">
+  <div class="container">
+    <h2>Nossa História, Missão e Valores</h2>
+
+    <div class="institucional-grid">
+      <div class="institucional-card">
+        <h3>Histórico</h3>
+        <p>A You Can nasceu com o propósito de transformar o ensino de inglês em algo leve, divertido e motivador. Unimos tecnologia, gamificação e ensino humanizado para despertar o interesse e o prazer de aprender.</p>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Missão</h3>
+        <p>Proporcionar experiências de aprendizado inovadoras e eficazes, ajudando nossos alunos a alcançar a fluência por meio da diversão e da prática constante.</p>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Valores</h3>
+        <ul>
+          <li>Aprender com diversão e propósito</li>
+          <li>Respeito e empatia com cada aluno</li>
+          <li>Inovação constante na metodologia</li>
+          <li>Comprometimento com resultados reais</li>
+        </ul>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Propósito</h3>
+        <p>Transformar vidas por meio da comunicação global, mostrando que todos podem — e devem — acreditar em seu potencial de aprender inglês!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diferenciais -->
+<section id="diferenciais" class="diferenciais">
+  <div class="container">
+    <h2>Nossos Diferenciais</h2>
+    <div class="diferenciais-grid">
+
+      <div class="diferencial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2421/2421042.png" alt="Gamificação" title="Gamificação">
+        <h3>Aprendizado Gamificado</h3>
+        <p>Transformamos o aprendizado em jogo! O aluno conquista pontos, medalhas e desafios que estimulam o progresso de forma divertida.</p>
+      </div>
+
+      <div class="diferencial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3063/3063176.png" alt="Aulas interativas" title="Aulas interativas">
+        <h3>Aulas Interativas</h3>
+        <p>Ambientes dinâmicos, com atividades práticas e tecnológicas que mantêm a motivação em alta do início ao fim.</p>
+      </div>
+
+      <div class="diferencial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Professores qualificados" title="Professores qualificados">
+        <h3>Professores Especializados</h3>
+        <p>Equipe de docentes capacitados e atualizados em metodologias ativas e gamificação.</p>
+      </div>
+
+      <div class="diferencial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Resultados reais" title="Resultados reais">
+        <h3>Resultados Reais</h3>
+        <p>Progresso acompanhado de perto com feedbacks personalizados e foco na fluência.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Cursos -->
   <section id="cursos" class="cursos">
@@ -115,10 +177,10 @@
     <div class="container">
       <h2>Galeria You Can</h2>
       <div class="galeria-grid">
-        <img src="imgs/logo - inical - youcan.jpg" alt="Aula prática You Can" title="Aula prática You Can" />
-        <img src="imgs/logo - inical - youcan.jpg" alt="Turma Kids em atividade" title="Turma Kids em atividade" />
-        <img src="imgs/logo - inical - youcan.jpg" alt="Turma Teens em aula" title="Turma Teens em aula" />
-        <img src="imgs/logo - inical - youcan.jpg" alt="Atividade interativa" title="Atividade interativa" />
+        <img src="imgs/logoyoucan.jpg" alt="Aula prática You Can" title="Aula prática You Can" />
+        <img src="imgs/logoyoucan.jpg" alt="Turma Kids em atividade" title="Turma Kids em atividade" />
+        <img src="imgs/logoyoucan.jpg" alt="Turma Teens em aula" title="Turma Teens em aula" />
+        <img src="imgs/logoyoucan.jpg" alt="Atividade interativa" title="Atividade interativa" />
       </div>
 
       <div class="video-section">
@@ -138,34 +200,117 @@
     <div class="depoimentos-grid">
 
       <div class="depoimento-item">
-        <a href="imgs/depoimento 01.jpg" target="_blank" title="Maria Fernanda - Aluna Teens">
-          <img src="imgs/depoimento 01.jpg" alt="Maria Fernanda - Aluna Teens">
+        <a href="imgs/depoimento01.jpg" target="_blank" title="Maria Fernanda - Aluna Teens">
+          <img src="imgs/depoimento01.jpg" alt="Maria Fernanda - Aluna Teens">
         </a>
         <p>Agradecemos à <strong>aluna Maria Fernanda</strong> por fazer parte da nossa instituição!</p>
       </div>
 
       <div class="depoimento-item">
-        <a href="imgs/depoimento 02.jpg" target="_blank" title="Patrícia Silva - Mãe de aluno Kids">
-          <img src="imgs/depoimento 02.jpg" alt="Patrícia Silva - Mãe de aluno Kids">
+        <a href="imgs/depoimento02.jpg" target="_blank" title="Patrícia Silva - Mãe de aluno Kids">
+          <img src="imgs/depoimento02.jpg" alt="Patrícia Silva - Mãe de aluno Kids">
         </a>
         <p>Agradecemos à <strong>mãe Patrícia Silva</strong> pela confiança e parceria com a You Can Kids!</p>
       </div>
 
       <div class="depoimento-item">
-        <a href="imgs/depoimento 03.jpg" target="_blank" title="Ricardo Oliveira - Aluno Adults">
-          <img src="imgs/depoimento 03.jpg" alt="Ricardo Oliveira - Aluno Adults">
+        <a href="imgs/depoimento03.jpg" target="_blank" title="Ricardo Oliveira - Aluno Adults">
+          <img src="imgs/depoimento03.jpg" alt="Ricardo Oliveira - Aluno Adults">
         </a>
         <p>Agradecemos ao <strong>aluno Ricardo Oliveira</strong> por crescer conosco em sua jornada no inglês!</p>
       </div>
 
       <div class="depoimento-item">
-        <a href="imgs/depoimento 04.jpg" target="_blank" title="Paulo Henrique - Aluno Teens">
-          <img src="imgs/depoimento 04.jpg" alt="Paulo Henrique - Aluno Teens">
+        <a href="imgs/depoimento04.jpg" target="_blank" title="Paulo Henrique - Aluno Teens">
+          <img src="imgs/depoimento04.jpg" alt="Paulo Henrique - Aluno Teens">
         </a>
         <p>Agradecemos ao <strong>aluno Paulo Henrique</strong> pela dedicação e entusiasmo nas aulas!</p>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- Equipe -->
+<section id="equipe" class="equipe">
+  <div class="container">
+    <h2>Nosso Time</h2>
+    <p>Conheça os profissionais apaixonados por ensinar e transformar o aprendizado em uma jornada divertida e eficaz!</p>
+
+    <div class="equipe-grid">
+      <!-- Diretora -->
+      <div class="equipe-card">
+        <img src="imgs/anadire.jpg" alt="Ana - Diretora" title="Ana - Diretora">
+        <h3>Ana</h3>
+        <p>Diretora</p>
+        <p class="descricao">Responsável pela gestão da escola e supervisão das equipes pedagógicas.</p>
+      </div>
+
+      <!-- Secretária Daniele -->
+      <div class="equipe-card">
+        <img src="imgs/youcan.jpg" alt="Daniele - Secretária" title="Daniele - Secretária">
+        <h3>Daniele</h3>
+        <p>Secretária</p>
+        <p class="descricao">Atende alunos, pais e organiza a agenda administrativa da escola.</p>
+      </div>
+
+      <!-- Secretária Ana Ketlyn -->
+      <div class="equipe-card">
+        <img src="imgs/youcan.jpg" alt="Ana Ketlyn - Secretária" title="Ana Ketlyn - Secretária">
+        <h3>Ana Ketlyn</h3>
+        <p>Secretária</p>
+        <p class="descricao">Auxilia na organização administrativa e suporte às atividades da escola.</p>
+      </div>
+    </div>
+
+    <!-- Subtítulo para Teachers -->
+    <h3 style="margin-top:3rem; color: var(--roxo);">Nossas Teachers</h3>
+
+    <div class="equipe-grid">
+      <!-- Professora Amanda -->
+      <div class="equipe-card">
+        <img src="imgs/teacheramanda.jpg" alt="Amanda - Teacher" title="Amanda - Teacher">
+        <h3>Amanda</h3>
+        <p>Professora</p>
+        <p class="descricao">Foca em desenvolvimento pedagógico e aulas dinâmicas para os alunos.</p>
+      </div>
+
+      <!-- Professora Itauany -->
+      <div class="equipe-card">
+        <img src="imgs/youcan.jpg" alt="Itauany - Teacher" title="Itauany - Teacher">
+        <h3>Itauany</h3>
+        <p>Professora</p>
+        <p class="descricao">Especialista em métodos de ensino inovadores para todas as idades.</p>
+      </div>
+
+      <!-- Professora Adri -->
+      <div class="equipe-card">
+        <img src="imgs/teacheradri.jpg" alt="Adri - Teacher" title="Adri - Teacher">
+        <h3>Adri</h3>
+        <p>Professora</p>
+        <p class="descricao">Foca em conversação e atividades práticas para engajar os alunos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Aula Experimental -->
+<section id="aula-experimental" class="contato">
+  <div class="container">
+    <h2>Agende sua Aula Experimental</h2>
+    <p>Preencha seus dados e receba um contato imediato pelo WhatsApp!</p>
+    <form id="form-aula">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="number" name="idade" placeholder="Idade" required>
+      <select name="faixa" required>
+        <option value="">Selecione a faixa etária</option>
+        <option value="Crianças (3–10)">Crianças (3–10)</option>
+        <option value="Adolescentes (11–15)">Adolescentes (11–15)</option>
+        <option value="Adultos (15+)">Adultos (15+)</option>
+      </select>
+      <input type="text" name="cidade" placeholder="Cidade" required>
+      <button type="submit" class="btn-primary">Agendar Agora</button>
+    </form>
   </div>
 </section>
 
@@ -192,8 +337,16 @@
 <section id="contato" class="contato">
   <div class="container">
     <h2>Entre em Contato</h2>
-    <p>Tem dúvidas ou quer agendar sua aula experimental? Fale com a gente!</p>
-    <a href="https://wa.me/5546999253296" class="btn-primary" target="_blank">Chamar no WhatsApp</a>
+    <p>Tem dúvidas, quer agendar sua aula experimental ou saber mais sobre nossos cursos?</p>
+    <p><strong>Fale diretamente com nossa equipe pelo WhatsApp!</strong></p>
+
+    <a href="https://wa.me/5546999253296" target="_blank" class="btn-contato">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" 
+           alt="Ícone do WhatsApp" width="22" height="22">
+      <span>Chamar no WhatsApp</span>
+    </a>
+
+<p class="info-extra">Atendimento de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 12h.</p>
   </div>
 </section>
 
@@ -225,7 +378,7 @@
     </div>
 
     <div class="footer-column">
-      <h3>Siga-me nas redes</h3>
+      <h3>Siga-nos nas redes</h3>
       <div class="footer-redes">
         <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">WhatsApp</a>
         <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-instagram">Instagram</a>
@@ -235,6 +388,16 @@
 
   </div>
 
+<!-- Newsletter -->
+<div class="newsletter">
+  <h3>Receba Novidades da You Can</h3>
+  <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
+  <form>
+    <input type="email" placeholder="Seu e-mail" required>
+    <button type="submit" class="btn-primary">Cadastrar</button>
+  </form>
+</div>
+
   <hr>
 
   <div class="footer-creditos">
@@ -243,16 +406,78 @@
   </div>
 </footer>
 
-  <!-- Script -->
-<script src="script.js"></script>
+<!-- Menu Mobile -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Fecha o menu ao clicar em qualquer link
+    document.querySelectorAll('.nav ul li a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      once: true // animação ocorre apenas uma vez
+    });
+  });
+</script>
+
+<!-- Schema JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "You Can Inglês com Gamificação",
+  "url": "https://daltonneres.github.io/youcan/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Pres. Costa e Silva, 740",
+    "addressLocality": "Dois Vizinhos",
+    "addressRegion": "PR",
+    "postalCode": "85660-000",
+    "addressCountry": "BR"
+  },
+  "telephone": "+55-46-99925-3296",
+  "sameAs": [
+    "https://www.instagram.com/youcan_centrodeensino.ingles/",
+    "https://www.youtube.com/@escolayoucan"
+  ]
+}
+</script>
 
 <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('section, .curso-card, .depoimento-card');
+  elements.forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 200 * i);
   });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // FAQ interativo
+  const faqItems = document.querySelectorAll('.faq-item h3');
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentElement.classList.toggle('active');
+    });
+  });
+});
 </script>
 
 </body>

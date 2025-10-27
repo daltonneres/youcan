@@ -29,10 +29,10 @@ body {
 
 /* ===== HEADER ===== */
 .header {
-  background: var(--azul-medio);
+  background: var(--roxo);
   color: var(--branco);
   padding: 1rem 0;
-  position: sticky;
+  position: static !important;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -344,14 +344,52 @@ section h2 {
 }
 
 /* ===== CONTATO ===== */
-.contato {
+#contato {
+  background: var(--branco);
+  color: #000000;
   text-align: center;
-  color: #222;
-  border: none;
-  padding: 3rem 2rem;
-  width: 90%;
-  max-width: 800px;
-  margin: 3rem auto;
+  padding: 5rem 2rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contato p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+#contato .btn-contato {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#contato .btn-contato:hover {
+  background: #20b85a;
+  transform: translateY(-3px);
+}
+
+#contato .btn-contato img {
+  filter: brightness(0) invert(1);
+}
+
+#contato .info-extra {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  opacity: 0.9;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -669,5 +707,366 @@ hr {
 
   .footer-creditos {
     font-size: 12px;
+  }
+}
+
+/* ===== Aula Experimental ===== */
+#aula-experimental {
+ background: #fafafa; 
+ padding: 4rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#aula-experimental h2 {
+  color: var(--roxo);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#aula-experimental p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+#aula-experimental form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#aula-experimental input,
+#aula-experimental select {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 0.95rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#aula-experimental input:focus,
+#aula-experimental select:focus {
+  outline: none;
+  border-color: var(--azul-claro);
+  box-shadow: 0 0 8px rgba(16, 200, 255, 0.3);
+}
+
+#aula-experimental button {
+  background: var(--azul-claro);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#aula-experimental button:hover {
+  background: var(--azul-medio);
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #aula-experimental input,
+  #aula-experimental select {
+    width: 100%;
+  }
+
+  #aula-experimental button {
+    width: 100%;
+  }
+}
+
+/* ===== Institucional ===== */
+.institucional {
+  background: #fafafa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.institucional h2 {
+  color: var(--roxo);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.institucional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.institucional-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.institucional-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.institucional-card h3 {
+  color: var(--azul-claro);
+  margin-bottom: 1rem;
+}
+
+.institucional-card p,
+.institucional-card ul {
+  color: #555;
+  line-height: 1.6;
+}
+
+.institucional-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.institucional-card ul li::before {
+  content: "✔";
+  color: var(--azul-claro);
+  margin-right: 8px;
+}
+
+/* ===== Diferenciais ===== */
+.diferenciais {
+  background: #fafafa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.diferenciais h2 {
+  color: var(--roxo);
+  margin-bottom: 2rem;
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.diferencial-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.diferencial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.diferencial-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.diferencial-card h3 {
+  color: var(--azul-claro);
+  margin-bottom: 0.5rem;
+}
+
+.diferencial-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== Newsletter ===== */
+.newsletter {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--roxo);
+  border-radius: 12px;
+  margin: 2rem auto;
+}
+
+.newsletter h3 {
+  color: var(--branco);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 280px;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: var(--azul-medio);
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background: var(--roxo);
+}
+
+/* ===== EQUIPE ===== */
+.equipe {
+  background: #fafafa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.equipe h2 {
+  color: var(--roxo);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.equipe p {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* GRID RESPONSIVO */
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards por linha em desktop */
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Remover centralização individual dos últimos cards */
+.equipe-grid .equipe-card:nth-last-child(-n+2) {
+  justify-self: auto;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+  .equipe-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .equipe-grid {
+    grid-template-columns: 1fr; /* 1 card por linha em mobile */
+  }
+
+  .equipe-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipe h2 {
+    font-size: 1.6rem;
+  }
+  .equipe p {
+    font-size: 0.95rem;
+  }
+  .equipe-card {
+    padding: 1.5rem 1rem;
+  }
+  .equipe-card img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* CARD */
+.equipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEM QUADRADA */
+.equipe-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px; /* quadrada com cantos arredondados */
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.equipe-card h3 {
+  color: var(--azul-claro);
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.equipe-card p {
+  margin-bottom: 0.3rem;
+}
+
+.equipe-card .descricao {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Centralizar os dois últimos cards */
+.equipe-grid .equipe-card:nth-last-child(-n+2) {
+  justify-self: center;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .equipe-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipe h2 {
+    font-size: 1.6rem;
+  }
+  .equipe p {
+    font-size: 0.95rem;
+  }
+  .equipe-card {
+    padding: 1.5rem 1rem;
+  }
+  .equipe-card img {
+    width: 90px;
+    height: 90px;
   }
 }
