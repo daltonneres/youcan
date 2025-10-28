@@ -25,22 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
   menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
-
-  // Envio formulário Aula Experimental para WhatsApp
-  const formAula = document.getElementById('form-aula');
-  formAula.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const nome = formAula.nome.value;
-    const idade = formAula.idade.value;
-    const faixa = formAula.faixa.value;
-    const cidade = formAula.cidade.value;
-
-    const mensagem = `Olá, quero agendar minha aula experimental!\nNome: ${nome}\nIdade: ${idade}\nFaixa etária: ${faixa}\nCidade: ${cidade}`;
-
-    const numeroWhatsApp = "5546999253296"; // seu número
-    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-
-    window.open(url, "_blank");
-  });
 });

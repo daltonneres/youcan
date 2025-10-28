@@ -216,6 +216,94 @@ section h2 {
   margin-top: 2rem;
 }
 
+/* ===== Cursos com Imagem Sobreposta ===== */
+.curso-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.curso-card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.curso-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagens específicas */
+.curso-card.kids {
+  background-image: url('imgs/youcanfundo.jpg');
+}
+
+.curso-card.teens {
+  background-image: url('imgs/youcanfundo.jpg');
+}
+
+.curso-card.adults {
+  background-image: url('imgs/youcanfundo.jpg');
+}
+
+/* Overlay com conteúdo */
+.curso-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.3s;
+}
+
+.curso-card:hover .overlay {
+  background: rgba(0,0,0,0.65);
+}
+
+.curso-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.curso-card p {
+  font-size: 1rem;
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.curso-card .btn-secondary {
+  background: var(--azul-claro);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.curso-card .btn-secondary:hover {
+  background: var(--azul-medio);
+  transform: scale(1.05);
+}
+
+/* ===== GALERIA DE IMAGENS ===== */
+
 .galeria-grid img {
   width: 100%;
   border-radius: 12px;
@@ -1069,4 +1157,190 @@ hr {
     width: 90px;
     height: 90px;
   }
+}
+
+/* ===== Teste de Nível ===== */
+.teste-nivel {
+  background: #fafafa;
+  color: #000;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+}
+
+.teste-nivel h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.teste-nivel p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.teste-nivel .btn-primary {
+  background: #fff;
+  color: var(--roxo);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.teste-nivel .btn-primary:hover {
+  transform: scale(1.05);
+  background: var(--azul-medio);
+  color: #fff;
+}
+
+/* ===== BLOG ===== */
+.blog {
+  background: #fafafa;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.blog h2 {
+  color: var(--roxo);
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch; /* garante que todos preencham a mesma altura */
+}
+
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* 1 card por linha no celular */
+  }
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* permite que o botão vá sempre para baixo */
+  height: 100%; /* preenche o grid igualmente */
+  max-width: 400px;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px; /* define uma altura fixa */
+  object-fit: cover;
+  border-bottom: 4px solid var(--roxo);
+}
+
+.blog-card h3 {
+  color: var(--azul-claro);
+  margin: 1rem 1rem 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.blog-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0 1rem 1.5rem;
+  line-height: 1.5;
+  flex-grow: 1; /* empurra o botão pra base */
+}
+
+.blog-card .btn-secondary {
+  margin: 0 1rem 1.5rem;
+  align-self: flex-start; /* mantém alinhamento bonito */
+}
+
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== YOUCANTALK ===== */
+.youcantalk {
+  background: #fafafa;
+  color: #000;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 0;
+}
+
+.youcantalk h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.youcantalk p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.youcantalk form {
+  background: #fff;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.youcantalk form input,
+.youcantalk form select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.youcantalk form button {
+  background: var(--roxo);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.youcantalk form button:hover {
+  background: var(--azul-claro);
 }

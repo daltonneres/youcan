@@ -45,15 +45,14 @@
 <nav class="nav">
   <ul>
     <li><a href="#home" class="active">Início</a></li>
-    <li><a href="#sobre">Sobre</a></li>
     <li><a href="#institucional">Institucional</a></li>
     <li><a href="#cursos">Cursos</a></li>
     <li><a href="#galeria">Galeria</a></li>
     <li><a href="#depoimentos">Depoimentos</a></li>
     <li><a href="#equipe">Equipe</a></li>
     <li><a href="#aula-experimental">Aula Experimental</a></li>
+    <li><a href="#blog">Blog</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contato">Contato</a></li>
   </ul>
 </nav>
 
@@ -148,29 +147,39 @@
   </div>
 </section>
 
-  <!-- Cursos -->
-  <section id="cursos" class="cursos">
-    <div class="container">
-      <h2>Nossos Cursos</h2>
-      <div class="curso-grid">
-        <div class="curso-card">
+<!-- Cursos -->
+<section id="cursos" class="cursos">
+  <div class="container">
+    <h2>Nossos Cursos</h2>
+    <div class="curso-grid">
+      
+      <div class="curso-card kids">
+        <div class="overlay">
           <h3>You Can Kids</h3>
           <p>Para crianças de 3 a 10 anos, com aprendizado dinâmico e visual.</p>
           <a href="kids.html" class="btn-secondary">Acessar Site Kids</a>
         </div>
-        <div class="curso-card">
+      </div>
+
+      <div class="curso-card teens">
+        <div class="overlay">
           <h3>You Can Teens</h3>
           <p>Para adolescentes de 11 a 15 anos, com aulas modernas e interativas.</p>
           <a href="teens.html" class="btn-secondary">Acessar Site Teens</a>
         </div>
-        <div class="curso-card">
+      </div>
+
+      <div class="curso-card adults">
+        <div class="overlay">
           <h3>You Can Adults</h3>
-          <p>Para adultos de 15 a 50 anos, com metodologia prática e flexível.</p>
+          <p>Para adultos acima de 15 anos, com metodologia prática e flexível.</p>
           <a href="adults.html" class="btn-secondary">Acessar Site Adults</a>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Galeria -->
   <section id="galeria" class="galeria">
@@ -314,6 +323,44 @@
   </div>
 </section>
 
+<!-- Teste de Nível -->
+<section id="teste-nivel" class="teste-nivel">
+  <div class="container">
+    <h2>Teste Seu Nível de Inglês</h2>
+    <p>Descubra qual é o seu nível de inglês em poucos minutos! Nosso teste é gratuito, rápido e ajuda a direcionar o curso ideal para você.</p>
+    <a href="https://daltonneres.github.io/quiz-educacional/level.html" target="_blank" class="btn-primary">Fazer o Teste Agora</a>
+  </div>
+</section>
+
+<!-- YouCanTalk -->
+<section id="youcantalk" class="youcantalk">
+  <div class="container">
+    <h2>YouCanTalk 💬 Pratique Seu Inglês</h2>
+    <p>Converse com nosso assistente virtual e pratique seu inglês de forma divertida e personalizada!  
+    Se você já é aluno da You Can, acesse o YouCanTalk diretamente. Caso ainda não seja, deixe seus dados e fale conosco pelo WhatsApp.</p>
+
+    <form id="form-youcantalk">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="tel" name="telefone" placeholder="Telefone com DDD" required>
+      
+      <label>Você já é aluno da You Can?</label>
+      <select name="aluno" id="aluno-select" required>
+        <option value="">Selecione uma opção</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <!-- Campos extras (aparecem só se não for aluno) -->
+      <div id="extra-fields" style="display: none;">
+        <input type="number" name="idade" placeholder="Idade" required>
+        <input type="text" name="cidade" placeholder="Cidade" required>
+      </div>
+
+      <button type="submit" class="btn-primary">Acessar YouCanTalk</button>
+    </form>
+  </div>
+</section>
+
   <!-- FAQ -->
   <section id="faq" class="faq">
     <div class="container">
@@ -333,6 +380,86 @@
     </div>
   </section>
 
+<!-- Blog -->
+<section id="blog" class="blog">
+  <div class="container">
+    <h2>Blog You Can</h2>
+
+    <div class="blog-grid">
+
+      <!-- Post 1 -->
+      <div class="blog-card">
+        <img src="imgs/blog1.jpg" alt="10 anos é cedo demais para aprender inglês?" title="10 anos é cedo demais para aprender inglês?">
+        <h3>10 anos é cedo demais para aprender inglês?</h3>
+        <p>
+          Na verdade... é a hora certa! 💜  
+          Descubra como a You Can transforma o aprendizado em algo natural desde cedo.
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="blog-card">
+        <img src="imgs/blog2.jpg" alt="Intercâmbio Agrícola" title="Intercâmbio Agrícola">
+        <h3>Da You Can para o Havaí 🌎</h3>
+        <p>
+          O inglês levou nossa aluna Paola para um intercâmbio agrícola no Havaí.  
+          Você pode ser o próximo! 🚀
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="blog-card">
+        <img src="imgs/blog3.jpg" alt="Vem aí novidade You Can Dollar" title="Vem aí novidade You Can Dollar">
+        <h3>Vem aí: YouCanDollar 💰</h3>
+        <p>
+          Uma novidade incrível está chegando!  
+          Fique ligado e descubra como o inglês pode valer ouro! ✨
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="blog-card">
+        <img src="imgs/blog4.jpg" alt="É possível aprender inglês sem saber ler ou escrever?" title="É possível aprender inglês sem saber ler ou escrever?">
+        <h3>É possível aprender inglês sem saber ler?</h3>
+        <p>
+          Sim! 🙌 A metodologia You Can foi feita para todos,  
+          independentemente do nível inicial.  
+          Aqui, o aprendizado é leve e natural!
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+      <!-- Post 5 -->
+      <div class="blog-card">
+        <img src="imgs/blog5.jpg" alt="Pensamento do Dia - Escola de Inglês You Can" title="Pensamento do Dia - Escola de Inglês You Can">
+        <h3>Pensamento do Dia 💭</h3>
+        <p>
+          Já pensou se a escola de inglês do seu filho fosse o lugar  
+          que você sonhou ter encontrado na infância?  
+          Onde aprender fosse leve, divertido e cheio de conquistas! 💜
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+      <!-- Post 6 -->
+      <div class="blog-card">
+        <img src="imgs/blog6.jpg" alt="Comece Inglês em 2025 - You Can Inglês com Gamificação" title="Comece Inglês em 2025 - You Can Inglês com Gamificação">
+        <h3>Comece Hoje, Não Amanhã 🚀</h3>
+        <p>
+          1 pessoa começou inglês em 2025.  
+          30 ainda dizem: “Ano que vem eu começo!” ⏳  
+          A fluência começa com o primeiro passo — e o melhor momento é agora!
+        </p>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Ver Matéria Completa</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Contato -->
 <section id="contato" class="contato">
   <div class="container">
@@ -349,6 +476,176 @@
 <p class="info-extra">Atendimento de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 12h.</p>
   </div>
 </section>
+
+<!-- BOT FLUTUANTE -->
+<div class="bot-flutuante-container">
+  <div class="bot-flutuante" id="botBtn" title="Vamos conversar! Treine seu inglês 😄">
+    <img src="imgs/bot.jpg" alt="Bot - You Can Talk" title="Bot - You Can Talk" />
+  </div>
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">You Can Talk 🤖</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input" id="chatInputContainer" style="display:none;">
+      <input type="text" id="chatInput" placeholder="Digite aqui..." />
+      <button id="sendBtn">Enviar</button>
+    </div>
+    <div class="chat-options" id="chatOptions" style="display:none; padding:10px; border-top:1px solid #ccc;"></div>
+  </div>
+</div>
+
+<style>
+.bot-flutuante-container { position: fixed; bottom: 20px; right: 20px; z-index: 9999; }
+.bot-flutuante { width: 60px; height: 60px; border-radius: 50%; background-color: #5c15ea; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
+.bot-flutuante img { width: 60%; height: 60%; border-radius: 50%; }
+.chat-box { width: 320px; max-height: 500px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); overflow: hidden; display: none; flex-direction: column; font-family: 'Montserrat', sans-serif;}
+.chat-header { background-color: #5c15ea; color: #fff; padding: 12px; font-weight: bold; text-align: center; font-size: 16px;}
+.chat-messages { flex: 1; padding: 10px; overflow-y: auto; font-size: 14px;}
+.chat-messages .bot-msg { background-color: #eee; padding: 8px 10px; margin: 5px 0; border-radius: 10px;}
+.chat-messages .user-msg { background-color: #5c15ea; color: #fff; padding: 8px 10px; margin: 5px 0; border-radius: 10px; text-align: right;}
+.chat-options button { margin: 5px 5px 0 0; padding: 6px 12px; border-radius: 8px; border:none; background-color:#5c15ea; color:#fff; cursor:pointer; font-size: 13px;}
+.chat-input { display: flex; padding: 8px; border-top: 1px solid #ccc; background-color: #f5f5f5;}
+.chat-input input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; }
+.chat-input button { background-color: #5c15ea; color: #fff; border: none; margin-left: 6px; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 14px;}
+</style>
+
+<script>
+const botBtn = document.getElementById('botBtn');
+const chatBox = document.getElementById('chatBox');
+const chatMessages = document.getElementById('chatMessages');
+const chatOptions = document.getElementById('chatOptions');
+const chatInputContainer = document.getElementById('chatInputContainer');
+const chatInput = document.getElementById('chatInput');
+const sendBtn = document.getElementById('sendBtn');
+
+let userData = {};
+let step = 0;
+let interactionTimeout;
+
+// Funções básicas
+function botMessage(msg) {
+  const div = document.createElement('div');
+  div.classList.add('bot-msg');
+  div.innerText = msg;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  resetTimeout();
+  chatOptions.style.display = 'none';
+}
+
+function userMessage(msg) {
+  const div = document.createElement('div');
+  div.classList.add('user-msg');
+  div.innerText = msg;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  resetTimeout();
+}
+
+// Limpa totalmente o chat
+function resetChat() {
+  chatMessages.innerHTML = '';
+  chatOptions.innerHTML = '';
+  chatInput.value = '';
+  chatInputContainer.style.display = 'none';
+  chatOptions.style.display = 'none';
+  step = 0;
+  userData = {};
+}
+
+// Timeout automático de 15 segundos
+function resetTimeout() {
+  clearTimeout(interactionTimeout);
+  interactionTimeout = setTimeout(() => {
+    botMessage("Obrigado pelo contato! 😊");
+    setTimeout(() => { resetChat(); }, 1000);
+  }, 15000);
+}
+
+// Mostra opções clicáveis
+function showOptions(options, callback) {
+  chatOptions.innerHTML = '';
+  options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.innerText = opt;
+    btn.addEventListener('click', () => {
+      userMessage(opt);
+      callback(opt);
+    });
+    chatOptions.appendChild(btn);
+  });
+  chatOptions.style.display = 'flex';
+  chatOptions.style.flexWrap = 'wrap';
+  chatInputContainer.style.display = 'none';
+}
+
+// Fluxo principal
+function nextStep(input) {
+  if(step === 0) {
+    botMessage("Olá! Eu sou You Can Talk 🤖, assistente virtual da Instituição You Can, especializada em Inglês com Gamificação. Temos aulas presenciais e online para crianças a partir de 3 anos, jovens e adultos, com metodologias dinâmicas e interativas.");
+    step++;
+    setTimeout(() => { botMessage("Você tem interesse em conhecer mais?"); showOptions(['Sim','Não'], nextStep); }, 1000);
+  } else if(step === 1) {
+    if(input.toLowerCase() === 'sim') {
+      step++;
+      botMessage("Ótimo! Vamos começar com algumas informações básicas.");
+      setTimeout(() => { botMessage("Em qual cidade você reside?"); chatInputContainer.style.display = 'flex'; chatInput.focus(); }, 500);
+    } else {
+      botMessage("Tudo bem! Muito obrigado pelo seu contato. 😊");
+      resetChat();
+    }
+  } else if(step === 2) {
+    userData.cidade = input;
+    step++;
+    botMessage("Qual o seu número de telefone?");
+    chatInputContainer.style.display = 'flex'; chatInput.focus();
+  } else if(step === 3) {
+    userData.telefone = input;
+    step++;
+    botMessage("Qual dia da semana você prefere para as aulas?");
+    showOptions(['Segunda','Terça','Quarta','Quinta','Sexta','Sábado'], nextStep);
+  } else if(step === 4) {
+    userData.dia = input;
+    step++;
+    botMessage("Qual período?");
+    if(input.toLowerCase() === 'sábado') {
+      showOptions(['Manhã'], nextStep);
+    } else {
+      showOptions(['Manhã','Tarde','Noite'], nextStep);
+    }
+  } else if(step === 5) {
+    userData.periodo = input;
+    step++;
+    botMessage("Tipo de aula?");
+    showOptions(['Turma','VIP'], nextStep);
+  } else if(step === 6) {
+    userData.tipo = input;
+    step++;
+    botMessage("Modalidade de aula?");
+    showOptions(['Presencial','Online'], nextStep);
+  } else if(step === 7) {
+    userData.modalidade = input;
+    botMessage("Perfeito! Nossa localização: Dois Vizinhos, Paraná. Agora vou encaminhar suas informações para o WhatsApp.");
+    const msgWhats = `Olá! Tenho interesse nas aulas da You Can.\nCidade: ${userData.cidade}\nTelefone: ${userData.telefone}\nDia: ${userData.dia}\nPeríodo: ${userData.periodo}\nTipo: ${userData.tipo}\nModalidade: ${userData.modalidade}`;
+    const whatsappURL = `https://wa.me/4699253296?text=${encodeURIComponent(msgWhats)}`;
+    setTimeout(() => { window.open(whatsappURL, '_blank'); botMessage("Obrigado pelo contato! 😊"); resetChat(); }, 2000);
+  }
+}
+
+// Eventos
+botBtn.addEventListener('click', () => {
+  const isOpen = chatBox.style.display === 'flex';
+  chatBox.style.display = isOpen ? 'none' : 'flex';
+  if(step === 0 && !isOpen) nextStep();
+});
+
+sendBtn.addEventListener('click', () => {
+  if(chatInput.value.trim() !== '') { nextStep(chatInput.value.trim()); chatInput.value = ''; }
+});
+
+chatInput.addEventListener('keypress', (e) => {
+  if(e.key === 'Enter' && chatInput.value.trim() !== '') { nextStep(chatInput.value.trim()); chatInput.value = ''; }
+});
+</script>
 
 <!-- Rodapé -->
 <footer class="footer">
@@ -476,6 +773,86 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => {
       item.parentElement.classList.toggle('active');
     });
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form-aula');
+  if (!form) {
+    console.error('form-aula não encontrado no DOM.');
+    return;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Pega os valores (seguro se o input não existir)
+    const nome = (this.nome && this.nome.value) ? this.nome.value.trim() : '';
+    const idade = (this.idade && this.idade.value) ? this.idade.value.trim() : '';
+
+    // Validação básica
+    if (!nome || !idade) {
+      alert('Por favor, preencha seu nome e idade antes de continuar.');
+      return;
+    }
+
+    // Valores fixos que você pediu
+    const faixa = 'Adultos (15+)';
+    const cidade = 'Salto do Lontra';
+
+    // Monta a mensagem (com quebras de linha normais) e codifica corretamente
+    const mensagem = `Olá 💜 Eu gostaria de agendar uma aula experimental na You Can!\n\nNome: ${nome}\nIdade: ${idade}\nFaixa etária: ${faixa}\nCidade: ${cidade}`;
+    const encoded = encodeURIComponent(mensagem);
+
+    const url = `https://wa.me/5546999253296?text=${encoded}`;
+
+    // Abre em nova aba; se bloqueado pelo navegador, redireciona na mesma aba
+    const win = window.open(url, '_blank');
+    if (!win) {
+      // fallback caso window.open seja bloqueado
+      window.location.href = url;
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const alunoSelect = document.getElementById('aluno-select');
+  const extraFields = document.getElementById('extra-fields');
+  const form = document.getElementById('form-youcantalk');
+
+  // Mostra/esconde campos extras
+  alunoSelect.addEventListener('change', () => {
+    extraFields.style.display = alunoSelect.value === 'nao' ? 'block' : 'none';
+  });
+
+  // Envio do formulário
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const nome = form.nome.value.trim();
+    const telefone = form.telefone.value.trim();
+    const aluno = form.aluno.value;
+
+    if (aluno === 'sim') {
+      // Já é aluno → vai direto pro site do YouCanTalk
+      window.open('https://chatgpt.com/g/g-681e4174f1688191a6ce5b653ef3aab2-you-can-talk-pratique-seu-ingles', '_blank');
+    } else if (aluno === 'nao') {
+      // Não é aluno → coleta mais dados e envia pro WhatsApp
+      const idade = form.idade.value.trim();
+      const cidade = form.cidade.value.trim();
+
+      const mensagem = `Olá! 💬 Gostaria de conhecer o YouCanTalk.%0A%0A` +
+        `Nome: ${nome}%0ATelefone: ${telefone}%0AIdade: ${idade}%0ACidade: ${cidade}`;
+      
+      const url = `https://wa.me/5546999253296?text=${mensagem}`;
+      window.open(url, '_blank');
+    } else {
+      alert('Por favor, selecione se você já é aluno da You Can.');
+    }
   });
 });
 </script>
