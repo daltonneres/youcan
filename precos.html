@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouCan | Preços e Serviços</title>
+  <link rel="icon" type="image/png" href="imgs/logoyoucan.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header">
+    <div class="container header-container">
+      <img src="imgs/logoyoucan.png" alt="YouCan Logo" title="YouCan Logo" class="logo">
+
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#precos-servicos" class="active">Preços e Serviços</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== SEÇÃO PRINCIPAL ===== -->
+  <section id="precos-servicos" class="container">
+    <h2>Conheça os preços e horários disponíveis</h2>
+    <p>
+      para os nossos cursos de inglês online e presencial, tanto para turmas quanto VIPs.<br>
+      Oferecemos aulas <strong>online ao vivo</strong>, <strong>presenciais</strong> ou no <strong>modo YouTube</strong> — escolha de acordo com sua rotina!<br><br>
+      As aulas podem ser <strong>duas vezes por semana (1h15min)</strong> ou <strong>uma vez por semana (2h30min)</strong>.
+    </p>
+    <p>Preencha o formulário abaixo para receber o valor da parcela, material e didático. Vamos começar!</p>
+
+    <!-- ===== FORMULÁRIO ===== -->
+    <form id="formPrecos" action="https://formsubmit.co/ingles.youcansecretaria@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>Você é o aluno ou o responsável?</label>
+      <select id="tipoPessoa" name="Tipo de pessoa" required>
+        <option value="">Selecione</option>
+        <option value="aluno">Sou o aluno</option>
+        <option value="responsavel">Sou o responsável</option>
+      </select>
+
+      <div id="campoNomeAluno" style="display:none;">
+        <label>Nome do aluno:</label>
+        <input type="text" name="Nome do aluno" placeholder="Digite o nome do aluno">
+      </div>
+
+      <div id="campoIdade" style="display:none;">
+        <label>Idade do aluno:</label>
+        <input type="number" id="idadeAluno" name="Idade" min="1" max="100" placeholder="Ex: 15">
+      </div>
+
+      <div id="campoResponsavel" style="display:none;">
+        <label>Nome do responsável:</label>
+        <input type="text" name="Nome do responsável" placeholder="Digite o nome do responsável">
+      </div>
+
+      <label>E-mail:</label>
+      <input type="email" name="E-mail" required placeholder="Digite seu e-mail">
+
+      <label>Telefone:</label>
+      <input type="tel" name="Telefone" required placeholder="(DDD) 90000-0000">
+
+      <label>Idioma desejado:</label>
+      <select name="Idioma" required>
+        <option value="Inglês" selected>Inglês</option>
+      </select>
+
+      <button type="submit" class="btn-primary">Receber valores</button>
+    </form>
+  </section>
+
+  <!-- ===== MENSAGEM FINAL ===== -->
+  <section class="container" id="mensagemFinal" style="display:none; text-align:center; margin:3rem auto;">
+    <h3>Mensagem enviada com sucesso!</h3>
+    <p>As mensagens foram encaminhadas para o nosso e-mail e, dentro do prazo de até 48h, você receberá a resposta.</p>
+  </section>
+
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <h3>You Can Inglês</h3>
+      <p>Aprenda inglês com gamificação! Transforme seu aprendizado em diversão e dinamismo.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Atendimento</h3>
+      <ul>
+        <li><a href="https://wa.me/5546999253296" target="_blank">Fale Conosco</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Siga-nos nas redes</h3>
+      <div class="footer-redes">
+        <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">WhatsApp</a>
+        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-instagram">Instagram</a>
+        <a href="https://www.youtube.com/@escolayoucan" target="_blank" class="btn-youtube">YouTube</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <h3>Receba Novidades da You Can</h3>
+    <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
+    <form>
+      <input type="email" placeholder="Seu e-mail" required>
+      <button type="submit" class="btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="footer-creditos">
+    <p>© 2025 You Can Inglês com Gamificação | Todos os direitos reservados.</p>
+    <p>Desenvolvido por <strong>Dalton Neres – Full Stack Developer</strong></p>
+  </div>
+</footer>
+
+  <!-- ===== SCRIPT DO FORMULÁRIO ===== -->
+  <script>
+    const tipoPessoa = document.getElementById('tipoPessoa');
+    const campoNomeAluno = document.getElementById('campoNomeAluno');
+    const campoIdade = document.getElementById('campoIdade');
+    const campoResponsavel = document.getElementById('campoResponsavel');
+    const idadeAluno = document.getElementById('idadeAluno');
+
+    tipoPessoa.addEventListener('change', function() {
+      campoNomeAluno.style.display = 'none';
+      campoIdade.style.display = 'none';
+      campoResponsavel.style.display = 'none';
+
+      if (this.value === 'aluno') {
+        campoNomeAluno.style.display = 'block';
+        campoIdade.style.display = 'block';
+      } else if (this.value === 'responsavel') {
+        campoNomeAluno.style.display = 'block';
+      }
+    });
+
+    idadeAluno.addEventListener('input', function() {
+      if (parseInt(this.value) < 18) {
+        campoResponsavel.style.display = 'block';
+      } else {
+        campoResponsavel.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

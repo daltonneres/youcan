@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,13 +29,33 @@
 
 <body>
 
+<!-- ===== POP-UP MATRÍCULAS (markup apenas - comportamento em script.js) ===== -->
+<!-- Modal aparece centralizado; abre sempre quando a página carrega (controlado pelo script.js) -->
+<div id="matriculas-modal-backdrop" class="modal-backdrop" aria-hidden="true" style="display:none;">
+  <div id="matriculas-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="matriculas-title">
+    <button class="modal-close" id="matriculas-close" aria-label="Fechar pop-up">✕</button>
+    <div class="modal-content">
+      <h2 id="matriculas-title">🎉 Matrículas Abertas!</h2>
+      <p>Garanta sua vaga e comece a aprender inglês com diversão e resultados!</p>
+      <p><strong>Vagas limitadas — fale agora com nossa equipe pelo WhatsApp.</strong></p>
+      <div class="modal-actions">
+        <a id="matriculas-whatsapp" class="btn-primary btn-modal" href="https://wa.me/5546999253296" target="_blank" rel="noopener noreferrer">
+          Falar com a You Can 💜
+        </a>
+        <button id="matriculas-fechar" class="btn-secondary btn-modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================================================================ -->
+
 <!-- Cabeçalho -->
 <header class="header">
   <div class="container header-container">
     <a href="#home" class="logo-link">
-      <img src="imgs/logoyoucan.png" 
-           alt="Logo You Can Inglês com Gamificação" 
-           title="Logo You Can Inglês com Gamificação" 
+      <img src="imgs/logoyoucan.png"
+           alt="Logo You Can Inglês com Gamificação"
+           title="Logo You Can Inglês com Gamificação"
            class="logo" />
     </a>
 
@@ -42,44 +64,46 @@
       ☰
     </button>
 
-<nav class="nav">
-  <ul>
-    <li><a href="#home" class="active">Início</a></li>
-    <li><a href="#institucional">Institucional</a></li>
-    <li><a href="#cursos">Cursos</a></li>
-    <li><a href="#galeria">Galeria</a></li>
-    <li><a href="#depoimentos">Depoimentos</a></li>
-    <li><a href="#equipe">Equipe</a></li>
-    <li><a href="#aula-experimental">Aula Experimental</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ul>
-</nav>
+    <nav class="nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#home" class="active">Início</a></li>
+        <li><a href="#institucional">Institucional</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#aula-experimental">Aula Experimental</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="precos.html">Preços e Horários</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="en.html" target="_blank" rel="noopener noreferrer">English</a></li>
+      </ul>
+    </nav>
 
-    <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">
+    <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp" rel="noopener noreferrer">
       Fale Conosco
     </a>
   </div>
 </header>
 
-  <!-- Banner -->
-  <section id="home" class="banner">
-    <div class="banner-content">
-      <h1>Aprenda Inglês com Gamificação e Diversão!</h1>
-      <p>Transforme seu aprendizado em uma experiência envolvente e dinâmica. Aulas presenciais e online!</p>
-      <a href="#cursos" class="btn-primary">Conheça Nossos Cursos</a>
-    </div>
-  </section>
+<!-- Banner -->
+<section id="home" class="banner">
+  <div class="banner-content">
+    <h1>Aprenda Inglês com Gamificação e Diversão!</h1>
+    <p>Transforme seu aprendizado em uma experiência envolvente e dinâmica. Aulas presenciais e online!</p>
+    <a href="#cursos" class="btn-primary">Conheça Nossos Cursos</a>
+  </div>
+</section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Sobre a You Can</h2>
-      <p>A You Can é uma escola de inglês com metodologia gamificada, que transforma o ensino em uma experiência divertida e eficaz. Atuamos com turmas presenciais e online, para crianças, adolescentes e adultos.</p>
-    </div>
-  </section>
+<!-- Sobre -->
+<section id="sobre" class="sobre">
+  <div class="container">
+    <h2>Sobre a You Can</h2>
+    <p>A You Can é uma escola de inglês com metodologia gamificada, que transforma o ensino em uma experiência divertida e eficaz. Atuamos com turmas presenciais e online, para crianças, adolescentes e adultos.</p>
+  </div>
+</section>
 
-  <!-- Institucional -->
+<!-- Institucional -->
 <section id="institucional" class="institucional">
   <div class="container">
     <h2>Nossa História, Missão e Valores</h2>
@@ -147,6 +171,27 @@
   </div>
 </section>
 
+<section id="resultados" class="resultados">
+  <div class="container">
+    <h2>Resultados Reais 💪</h2>
+    <p>Mais de <strong>500 alunos</strong> já conquistaram fluência com a metodologia You Can!</p>
+    <div class="resultados-grid">
+      <div class="resultado-item">
+        <h3>+95%</h3>
+        <p>dos alunos recomendam a You Can</p>
+      </div>
+      <div class="resultado-item">
+        <h3>+300</h3>
+        <p>alunos iniciaram conversação em menos de 6 meses</p>
+      </div>
+      <div class="resultado-item">
+        <h3>+10</h3>
+        <p>anos transformando o aprendizado de inglês em diversão</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Cursos -->
 <section id="cursos" class="cursos">
   <div class="container">
@@ -181,26 +226,26 @@
   </div>
 </section>
 
-  <!-- Galeria -->
-  <section id="galeria" class="galeria">
-    <div class="container">
-      <h2>Galeria You Can</h2>
-      <div class="galeria-grid">
-        <img src="imgs/logoyoucan.jpg" alt="Aula prática You Can" title="Aula prática You Can" />
-        <img src="imgs/logoyoucan.jpg" alt="Turma Kids em atividade" title="Turma Kids em atividade" />
-        <img src="imgs/logoyoucan.jpg" alt="Turma Teens em aula" title="Turma Teens em aula" />
-        <img src="imgs/logoyoucan.jpg" alt="Atividade interativa" title="Atividade interativa" />
-      </div>
-
-      <div class="video-section">
-        <h3>Assista ao vídeo institucional</h3>
-        <video controls width="80%">
-          <source src="videos/apresentacao.mp4" type="video/mp4">
-          Seu navegador não suporta vídeos.
-        </video>
-      </div>
+<!-- Galeria -->
+<section id="galeria" class="galeria">
+  <div class="container">
+    <h2>Galeria You Can</h2>
+    <div class="galeria-grid">
+      <img src="imgs/logoyoucan.jpg" alt="Aula prática You Can" />
+      <img src="imgs/logoyoucan.jpg" alt="Turma Kids em atividade" />
+      <img src="imgs/logoyoucan.jpg" alt="Turma Teens em aula" />
+      <img src="imgs/logoyoucan.jpg" alt="Atividade interativa" />
     </div>
-  </section>
+
+    <div class="video-section">
+      <h3>Assista ao vídeo institucional</h3>
+      <video controls width="80%">
+        <source src="videos/apresentacao.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+  </div>
+</section>
 
 <!-- Depoimentos -->
 <section id="depoimentos" class="depoimentos">
@@ -240,6 +285,24 @@
   </div>
 </section>
 
+<section id="quiz" class="quiz">
+  <div class="container">
+    <h2>🎯 Desafio Rápido: Você acerta?</h2>
+    <p>Escolha a tradução correta:</p>
+    <p><strong>"I’m learning English."</strong></p>
+    <button class="btn-secondary" onclick="resposta(true)">Eu estou aprendendo inglês</button>
+    <button class="btn-secondary" onclick="resposta(false)">Eu aprendi inglês</button>
+    <p id="quiz-feedback" style="margin-top:10px;"></p>
+  </div>
+</section>
+
+<script>
+function resposta(certa) {
+  const f = document.getElementById('quiz-feedback');
+  f.innerText = certa ? "✅ Acertou! You Can!" : "❌ Quase! Tente de novo!";
+}
+</script>
+
 <!-- Equipe -->
 <section id="equipe" class="equipe">
   <div class="container">
@@ -247,54 +310,47 @@
     <p>Conheça os profissionais apaixonados por ensinar e transformar o aprendizado em uma jornada divertida e eficaz!</p>
 
     <div class="equipe-grid">
-      <!-- Diretora -->
       <div class="equipe-card">
-        <img src="imgs/anadire.jpg" alt="Ana - Diretora" title="Ana - Diretora">
+        <img src="imgs/anadire.jpg" alt="Ana - Diretora">
         <h3>Ana</h3>
         <p>Diretora</p>
         <p class="descricao">Responsável pela gestão da escola e supervisão das equipes pedagógicas.</p>
       </div>
 
-      <!-- Secretária Daniele -->
       <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Daniele - Secretária" title="Daniele - Secretária">
+        <img src="imgs/youcan.jpg" alt="Daniele - Secretária">
         <h3>Daniele</h3>
         <p>Secretária</p>
         <p class="descricao">Atende alunos, pais e organiza a agenda administrativa da escola.</p>
       </div>
 
-      <!-- Secretária Ana Ketlyn -->
       <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Ana Ketlyn - Secretária" title="Ana Ketlyn - Secretária">
+        <img src="imgs/youcan.jpg" alt="Ana Ketlyn - Secretária">
         <h3>Ana Ketlyn</h3>
         <p>Secretária</p>
         <p class="descricao">Auxilia na organização administrativa e suporte às atividades da escola.</p>
       </div>
     </div>
 
-    <!-- Subtítulo para Teachers -->
     <h3 style="margin-top:3rem; color: var(--roxo);">Nossas Teachers</h3>
 
     <div class="equipe-grid">
-      <!-- Professora Amanda -->
       <div class="equipe-card">
-        <img src="imgs/teacheramanda.jpg" alt="Amanda - Teacher" title="Amanda - Teacher">
+        <img src="imgs/teacheramanda.jpg" alt="Amanda - Teacher">
         <h3>Amanda</h3>
         <p>Professora</p>
         <p class="descricao">Foca em desenvolvimento pedagógico e aulas dinâmicas para os alunos.</p>
       </div>
 
-      <!-- Professora Itauany -->
       <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Itauany - Teacher" title="Itauany - Teacher">
+        <img src="imgs/youcan.jpg" alt="Itauany - Teacher">
         <h3>Itauany</h3>
         <p>Professora</p>
         <p class="descricao">Especialista em métodos de ensino inovadores para todas as idades.</p>
       </div>
 
-      <!-- Professora Adri -->
       <div class="equipe-card">
-        <img src="imgs/teacheradri.jpg" alt="Adri - Teacher" title="Adri - Teacher">
+        <img src="imgs/teacheradri.jpg" alt="Adri - Teacher">
         <h3>Adri</h3>
         <p>Professora</p>
         <p class="descricao">Foca em conversação e atividades práticas para engajar os alunos.</p>
@@ -323,21 +379,13 @@
   </div>
 </section>
 
-<!-- Teste de Nível -->
-<section id="teste-nivel" class="teste-nivel">
-  <div class="container">
-    <h2>Teste Seu Nível de Inglês</h2>
-    <p>Descubra qual é o seu nível de inglês em poucos minutos! Nosso teste é gratuito, rápido e ajuda a direcionar o curso ideal para você.</p>
-    <a href="https://daltonneres.github.io/quiz-educacional/level.html" target="_blank" class="btn-primary">Fazer o Teste Agora</a>
-  </div>
-</section>
-
 <!-- YouCanTalk -->
 <section id="youcantalk" class="youcantalk">
   <div class="container">
     <h2>YouCanTalk 💬 Pratique Seu Inglês</h2>
     <p>Converse com nosso assistente virtual e pratique seu inglês de forma divertida e personalizada!  
-    Se você já é aluno da You Can, acesse o YouCanTalk diretamente. Caso ainda não seja, deixe seus dados e fale conosco pelo WhatsApp.</p>
+    Se você já é aluno da You Can, em breve poderá acessar essa ferramenta exclusiva diretamente.  
+    Caso ainda não seja aluno, deixe seus dados e fale conosco pelo WhatsApp.</p>
 
     <form id="form-youcantalk">
       <input type="text" name="nome" placeholder="Nome completo" required>
@@ -350,35 +398,38 @@
         <option value="nao">Não</option>
       </select>
 
-      <!-- Campos extras (aparecem só se não for aluno) -->
       <div id="extra-fields" style="display: none;">
         <input type="number" name="idade" placeholder="Idade" required>
         <input type="text" name="cidade" placeholder="Cidade" required>
       </div>
+
+      <p id="aluno-msg" class="aluno-msg" style="display:none; color: var(--azul-medio); font-weight:600; margin-top:10px;">
+        ✨ Em breve essa implementação estará disponível aos nossos alunos.
+      </p>
 
       <button type="submit" class="btn-primary">Acessar YouCanTalk</button>
     </form>
   </div>
 </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
-    <div class="container">
-      <h2>Dúvidas Frequentes</h2>
-      <div class="faq-item">
-        <h3>As aulas são presenciais ou online?</h3>
-        <p>Oferecemos ambas as modalidades! O aluno escolhe o formato que mais se adapta à sua rotina.</p>
-      </div>
-      <div class="faq-item">
-        <h3>O que é gamificação?</h3>
-        <p>É o uso de elementos de jogos para tornar o aprendizado mais interativo, divertido e eficaz.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Quais faixas etárias podem participar?</h3>
-        <p>Temos cursos para crianças (3 a 10 anos), adolescentes (11 a 15 anos) e adultos (a partir de 15 anos).</p>
-      </div>
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-item">
+      <h3>As aulas são presenciais ou online?</h3>
+      <p>Oferecemos ambas as modalidades! O aluno escolhe o formato que mais se adapta à sua rotina.</p>
     </div>
-  </section>
+    <div class="faq-item">
+      <h3>O que é gamificação?</h3>
+      <p>É o uso de elementos de jogos para tornar o aprendizado mais interativo, divertido e eficaz.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quais faixas etárias podem participar?</h3>
+      <p>Temos cursos para crianças (3 a 10 anos), adolescentes (11 a 15 anos) e adultos (a partir de 15 anos).</p>
+    </div>
+  </div>
+</section>
 
 <!-- Blog -->
 <section id="blog" class="blog">
@@ -460,6 +511,33 @@
   </div>
 </section>
 
+<!-- ===================================================== -->
+<!-- NOVA SEÇÃO: INFORMATIVOS YOU CAN -->
+<section id="informativos" class="informativos">
+  <div class="container">
+    <h2>📺 Informativos You Can</h2>
+    <p>Assista a vídeos, tutoriais e comunicados importantes da nossa escola!</p>
+
+    <div class="informativo-card">
+      <h3>Como funciona a modalidade online?</h3>
+      <p>Descubra como funciona nossa modalidade online e veja como é fácil aprender inglês com flexibilidade e acompanhamento personalizado!</p>
+      <a href="https://www.youtube.com/@escolayoucan" target="_blank" rel="noopener noreferrer" class="btn-primary">Assistir no YouTube ▶️</a>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== TESTE SEU IDIOMA ===== -->
+  <section id="teste-idioma" class="container" style="text-align:center; padding:4rem 2rem;">
+    <h2>Teste seu idioma</h2>
+    <p style="max-width:700px; margin:1rem auto; line-height:1.6;">
+      Teste seu conhecimento de forma leve e divertida com o teste online da YouCan.  
+      Gratuito e prático, ele pode ser feito pelo celular, computador ou tablet, quando e onde você quiser.  
+      Em poucos minutos, você descobre o seu nível no idioma e identifica o curso ideal para você.  
+      Faça agora mesmo o teste online da YouCanTalk!
+    </p>
+    <button class="btn-primary" disabled>Fazer o teste de inglês (em breve)</button>
+  </section>
+
 <!-- Contato -->
 <section id="contato" class="contato">
   <div class="container">
@@ -467,13 +545,12 @@
     <p>Tem dúvidas, quer agendar sua aula experimental ou saber mais sobre nossos cursos?</p>
     <p><strong>Fale diretamente com nossa equipe pelo WhatsApp!</strong></p>
 
-    <a href="https://wa.me/5546999253296" target="_blank" class="btn-contato">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" 
-           alt="Ícone do WhatsApp" width="22" height="22">
+    <a href="https://wa.me/5546999253296" target="_blank" class="btn-contato" rel="noopener noreferrer">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Ícone do WhatsApp" width="22" height="22">
       <span>Chamar no WhatsApp</span>
     </a>
 
-<p class="info-extra">Atendimento de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 12h.</p>
+    <p class="info-extra">Atendimento de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 12h.</p>
   </div>
 </section>
 
@@ -647,10 +724,9 @@ chatInput.addEventListener('keypress', (e) => {
 });
 </script>
 
-<!-- Rodapé -->
+<!-- RODAPÉ -->
 <footer class="footer">
   <div class="container footer-container">
-    
     <div class="footer-column">
       <h3>You Can Inglês</h3>
       <p>Aprenda inglês com gamificação! Transforme seu aprendizado em diversão e dinamismo.</p>
@@ -682,18 +758,16 @@ chatInput.addEventListener('keypress', (e) => {
         <a href="https://www.youtube.com/@escolayoucan" target="_blank" class="btn-youtube">YouTube</a>
       </div>
     </div>
-
   </div>
 
-<!-- Newsletter -->
-<div class="newsletter">
-  <h3>Receba Novidades da You Can</h3>
-  <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
-  <form>
-    <input type="email" placeholder="Seu e-mail" required>
-    <button type="submit" class="btn-primary">Cadastrar</button>
-  </form>
-</div>
+  <div class="newsletter">
+    <h3>Receba Novidades da You Can</h3>
+    <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
+    <form>
+      <input type="email" placeholder="Seu e-mail" required>
+      <button type="submit" class="btn-primary">Cadastrar</button>
+    </form>
+  </div>
 
   <hr>
 
@@ -703,159 +777,11 @@ chatInput.addEventListener('keypress', (e) => {
   </div>
 </footer>
 
-<!-- Menu Mobile -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-
-    // Fecha o menu ao clicar em qualquer link
-    document.querySelectorAll('.nav ul li a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('active');
-      });
-    });
-  });
-</script>
-
 <!-- AOS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-      duration: 800,
-      once: true // animação ocorre apenas uma vez
-    });
-  });
-</script>
 
-<!-- Schema JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "You Can Inglês com Gamificação",
-  "url": "https://daltonneres.github.io/youcan/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "R. Pres. Costa e Silva, 740",
-    "addressLocality": "Dois Vizinhos",
-    "addressRegion": "PR",
-    "postalCode": "85660-000",
-    "addressCountry": "BR"
-  },
-  "telephone": "+55-46-99925-3296",
-  "sameAs": [
-    "https://www.instagram.com/youcan_centrodeensino.ingles/",
-    "https://www.youtube.com/@escolayoucan"
-  ]
-}
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('section, .curso-card, .depoimento-card');
-  elements.forEach((el, i) => {
-    setTimeout(() => el.classList.add('visible'), 200 * i);
-  });
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // FAQ interativo
-  const faqItems = document.querySelectorAll('.faq-item h3');
-  faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-      item.parentElement.classList.toggle('active');
-    });
-  });
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('form-aula');
-  if (!form) {
-    console.error('form-aula não encontrado no DOM.');
-    return;
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Pega os valores (seguro se o input não existir)
-    const nome = (this.nome && this.nome.value) ? this.nome.value.trim() : '';
-    const idade = (this.idade && this.idade.value) ? this.idade.value.trim() : '';
-
-    // Validação básica
-    if (!nome || !idade) {
-      alert('Por favor, preencha seu nome e idade antes de continuar.');
-      return;
-    }
-
-    // Valores fixos que você pediu
-    const faixa = 'Adultos (15+)';
-    const cidade = 'Salto do Lontra';
-
-    // Monta a mensagem (com quebras de linha normais) e codifica corretamente
-    const mensagem = `Olá 💜 Eu gostaria de agendar uma aula experimental na You Can!\n\nNome: ${nome}\nIdade: ${idade}\nFaixa etária: ${faixa}\nCidade: ${cidade}`;
-    const encoded = encodeURIComponent(mensagem);
-
-    const url = `https://wa.me/5546999253296?text=${encoded}`;
-
-    // Abre em nova aba; se bloqueado pelo navegador, redireciona na mesma aba
-    const win = window.open(url, '_blank');
-    if (!win) {
-      // fallback caso window.open seja bloqueado
-      window.location.href = url;
-    }
-  });
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const alunoSelect = document.getElementById('aluno-select');
-  const extraFields = document.getElementById('extra-fields');
-  const form = document.getElementById('form-youcantalk');
-
-  // Mostra/esconde campos extras
-  alunoSelect.addEventListener('change', () => {
-    extraFields.style.display = alunoSelect.value === 'nao' ? 'block' : 'none';
-  });
-
-  // Envio do formulário
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const nome = form.nome.value.trim();
-    const telefone = form.telefone.value.trim();
-    const aluno = form.aluno.value;
-
-    if (aluno === 'sim') {
-      // Já é aluno → vai direto pro site do YouCanTalk
-      window.open('https://chatgpt.com/g/g-681e4174f1688191a6ce5b653ef3aab2-you-can-talk-pratique-seu-ingles', '_blank');
-    } else if (aluno === 'nao') {
-      // Não é aluno → coleta mais dados e envia pro WhatsApp
-      const idade = form.idade.value.trim();
-      const cidade = form.cidade.value.trim();
-
-      const mensagem = `Olá! 💬 Gostaria de conhecer o YouCanTalk.%0A%0A` +
-        `Nome: ${nome}%0ATelefone: ${telefone}%0AIdade: ${idade}%0ACidade: ${cidade}`;
-      
-      const url = `https://wa.me/5546999253296?text=${mensagem}`;
-      window.open(url, '_blank');
-    } else {
-      alert('Por favor, selecione se você já é aluno da You Can.');
-    }
-  });
-});
-</script>
+<!-- Script principal -->
+<script src="script.js" defer></script>
 
 </body>
 </html>
