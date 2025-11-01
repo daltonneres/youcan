@@ -63,27 +63,39 @@
       ☰
     </button>
 
-    <nav class="nav" aria-label="Main menu">
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#institucional">About Us</a></li>
-        <li><a href="#cursos">Courses</a></li>
-        <li><a href="#galeria">Gallery</a></li>
-        <li><a href="#depoimentos">Testimonials</a></li>
-        <li><a href="#equipe">Team</a></li>
-        <li><a href="#aula-experimental">Trial Lesson</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="precos.html">Prices & Schedules</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="index.html" target="_blank" rel="noopener noreferrer">Português</a></li>
-      </ul>
-    </nav>
+<nav class="nav" aria-label="Main menu">
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
 
-    <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp" rel="noopener noreferrer">
-      Contact Us
-    </a>
+    <li class="dropdown">
+      <a href="#about">About ▾</a>
+      <ul class="submenu">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#courses">Courses ▾</a>
+      <ul class="submenu">
+        <li><a href="#courses">Our Courses</a></li>
+        <li><a href="#trial-class">Trial Class</a></li>
+        <li><a href="prices.html">Prices & Schedule</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="index.html" target="_blank" rel="noopener noreferrer">Português</a></li>
+  </ul>
+</nav>
+
+<a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp" rel="noopener noreferrer">
+  Contact Us
+</a>
   </div>
-</header>
+  </header>
 
 <!-- Banner -->
 <section id="home" class="banner">
@@ -236,12 +248,30 @@
       <img src="imgs/logoyoucan.jpg" alt="Interactive activity" />
     </div>
 
-    <div class="video-section">
-      <h3>Watch our institutional video</h3>
-      <video controls width="80%">
-        <source src="videos/apresentacao.mp4" type="video/mp4">
-        Your browser does not support videos.
-      </video>
+<!-- ===== TOUR & LOCATION (side by side) ===== -->
+<section id="tour-location" class="video-duplo">
+  <div class="container">
+    <h2>🎬 Tour & How to Get to You Can</h2>
+    <p>Take a virtual tour of our school and see how easy it is to get here!</p>
+
+    <div class="videos-grid">
+      <!-- Tour -->
+      <div class="video-item">
+        <h3>🏫 School Tour</h3>
+        <video controls poster="imgs/youcanfundo.jpg">
+          <source src="videos/tuor.mp4" type="video/mp4">
+          Your browser does not support videos.
+        </video>
+      </div>
+
+      <!-- How to Get Here -->
+      <div class="video-item">
+        <h3>📍 How to Get Here</h3>
+        <video controls poster="imgs/youcanfundo.jpg">
+          <source src="videos/apresentacao.mp4" type="video/mp4">
+          Your browser does not support videos.
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -257,13 +287,6 @@
           <img src="imgs/depoimento01.jpg" alt="Maria Fernanda - Teen Student">
         </a>
         <p>We thank <strong>student Maria Fernanda</strong> for being part of our school!</p>
-      </div>
-
-      <div class="depoimento-item">
-        <a href="imgs/depoimento02.jpg" target="_blank" title="Patrícia Silva - Mother of Kids Student">
-          <img src="imgs/depoimento02.jpg" alt="Patrícia Silva - Mother of Kids Student">
-        </a>
-        <p>We thank <strong>mother Patrícia Silva</strong> for her trust and partnership with You Can Kids!</p>
       </div>
 
       <div class="depoimento-item">

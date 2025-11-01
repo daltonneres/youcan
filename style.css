@@ -1674,3 +1674,116 @@ section {
   font-size: 1.1rem;
   min-height: 24px; /* evita pular layout antes da resposta */
 }
+
+/* ===== VÍDEOS LADO A LADO ===== */
+.video-duplo {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: start;
+}
+
+.video-item video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-item h3 {
+  color: var(--roxo);
+  margin-bottom: 1rem;
+}
+
+/* ===== MENU AJUSTADO ===== */
+.nav ul {
+  list-style: none;              /* remove as bolinhas */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Submenu (dropdown suspenso) ===== */
+.nav ul li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;               /* logo abaixo do item principal */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  min-width: 200px;
+  z-index: 999;
+}
+
+.nav ul li:hover ul.submenu {
+  display: block;
+}
+
+.nav ul li ul.submenu li {
+  margin: 0;
+}
+
+.nav ul li ul.submenu a {
+  display: block;
+  padding: 10px 16px;
+  color: #5c15ea;
+  text-align: left;
+  border-radius: 0;
+  background: none;
+}
+
+.nav ul li ul.submenu a:hover {
+  background: #f0ecff;
+}
+
+/* ===== Ajuste do cabeçalho ===== */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav ul li ul.submenu {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+  .nav ul li ul.submenu a {
+    color: #fff;
+    padding-left: 24px;
+  }
+}

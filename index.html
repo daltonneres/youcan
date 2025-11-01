@@ -64,21 +64,33 @@
       ☰
     </button>
 
-    <nav class="nav" aria-label="Menu principal">
-      <ul>
-        <li><a href="#home" class="active">Início</a></li>
+<nav class="nav" aria-label="Menu principal">
+  <ul>
+    <li><a href="#home" class="active">Início</a></li>
+
+    <li class="dropdown">
+      <a href="#institucional">Sobre ▾</a>
+      <ul class="submenu">
         <li><a href="#institucional">Institucional</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
         <li><a href="#equipe">Equipe</a></li>
-        <li><a href="#aula-experimental">Aula Experimental</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="precos.html">Preços e Horários</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="en.html" target="_blank" rel="noopener noreferrer">English</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
       </ul>
-    </nav>
+    </li>
+
+    <li class="dropdown">
+      <a href="#cursos">Cursos ▾</a>
+      <ul class="submenu">
+        <li><a href="#cursos">Nossos Cursos</a></li>
+        <li><a href="#aula-experimental">Aula Experimental</a></li>
+        <li><a href="precos.html">Preços e Horários</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="en.html" target="_blank" rel="noopener noreferrer">English</a></li>
+  </ul>
+</nav>
 
     <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp" rel="noopener noreferrer">
       Fale Conosco
@@ -237,12 +249,30 @@
       <img src="imgs/logoyoucan.jpg" alt="Atividade interativa" />
     </div>
 
-    <div class="video-section">
-      <h3>Assista ao vídeo institucional</h3>
-      <video controls width="80%">
-        <source src="videos/apresentacao.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-      </video>
+<!-- ===== TOUR E LOCALIZAÇÃO (lado a lado) ===== -->
+<section id="tour-localizacao" class="video-duplo">
+  <div class="container">
+    <h2>🎬 Tour e Como Chegar à You Can</h2>
+    <p>Assista ao tour pela escola e veja o caminho até nossa unidade!</p>
+
+    <div class="videos-grid">
+      <!-- Tour -->
+      <div class="video-item">
+        <h3>🏫 Tour pela Escola</h3>
+        <video controls poster="imgs/youcanfundo.jpg">
+          <source src="videos/tuor.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+
+      <!-- Caminho -->
+      <div class="video-item">
+        <h3>📍 Como Chegar</h3>
+        <video controls poster="imgs/youcanfundo.jpg">
+          <source src="videos/apresentacao.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -258,13 +288,6 @@
           <img src="imgs/depoimento01.jpg" alt="Maria Fernanda - Aluna Teens">
         </a>
         <p>Agradecemos à <strong>aluna Maria Fernanda</strong> por fazer parte da nossa instituição!</p>
-      </div>
-
-      <div class="depoimento-item">
-        <a href="imgs/depoimento02.jpg" target="_blank" title="Patrícia Silva - Mãe de aluno Kids">
-          <img src="imgs/depoimento02.jpg" alt="Patrícia Silva - Mãe de aluno Kids">
-        </a>
-        <p>Agradecemos à <strong>mãe Patrícia Silva</strong> pela confiança e parceria com a You Can Kids!</p>
       </div>
 
       <div class="depoimento-item">
