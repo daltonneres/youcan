@@ -348,64 +348,64 @@ section h2 {
   margin-bottom: 2.5rem;
 }
 
+/* GRADE 2x2 FIXA */
 .depoimentos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem; /* espaçamento entre colunas e linhas */
   justify-items: center;
+  align-items: start;
 }
 
-.depoimentos-grid a {
-  display: block;
-  max-width: 500px;
-  border-radius: 0;
-  overflow: hidden;
+/* ITEM DEPOIMENTO */
+.depoimento-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+/* IMAGENS AJUSTADAS */
+.depoimento-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.depoimentos-grid a:hover {
-  transform: scale(1.03);
+/* EFEITO HOVER */
+.depoimento-item img:hover {
+  transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.depoimentos-grid img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-.depoimentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-}
-
-.depoimento-item {
-  text-align: center;
-  max-width: 450px;
-}
-
-.depoimento-item img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.depoimento-item img:hover {
-  transform: scale(1.03);
-}
-
+/* TEXTO ABAIXO DAS IMAGENS */
 .depoimento-item p {
   margin-top: 0.8rem;
   color: #444;
   font-size: 0.95rem;
   line-height: 1.5;
+  padding: 0 0.5rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .depoimentos-grid {
+    grid-template-columns: 1fr; /* em telas menores, fica 1 por linha */
+    gap: 1.5rem;
+  }
+
+  .depoimento-item {
+    max-width: 90%;
+  }
+
+  .depoimento-item img {
+    height: 220px;
+  }
+
+  .depoimento-item p {
+    font-size: 0.9rem;
+  }
 }
 
 /* ===== FAQ ===== */
