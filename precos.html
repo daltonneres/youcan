@@ -29,18 +29,23 @@
   <!-- ===== SEÇÃO PRINCIPAL ===== -->
   <section id="precos-servicos" class="container">
     <h2>Conheça os preços e horários disponíveis</h2>
-    <p>
-      para os nossos cursos de inglês online e presencial, tanto para turmas quanto VIPs.<br>
-      Oferecemos aulas <strong>online ao vivo</strong>, <strong>presenciais</strong> ou no <strong>modo YouTube</strong> — escolha de acordo com sua rotina!<br><br>
-      As aulas podem ser <strong>duas vezes por semana (1h15min)</strong> ou <strong>uma vez por semana (2h30min)</strong>.
+
+    <p style="text-align:left;">
+      Para nossos cursos de inglês presenciais para crianças, adolescentes e adultos, e online exclusivamente para adultos.
+      Aqui na You Can trabalhamos com a metodologia de gamificação, que torna o aprendizado mais envolvente, motivador e eficaz em qualquer idade.
+      <br><br>
+      As aulas presenciais têm duração de <strong>2 horas por encontro</strong>, e as aulas online para adultos têm duração de <strong>1h30 por encontro</strong>.
+      <br><br>
+      Preencha o formulário abaixo para receber o valor da parcela, informações sobre material didático e as opções disponíveis para seu perfil. Vamos começar?
     </p>
-    <p>Preencha o formulário abaixo para receber o valor da parcela, material e didático. Vamos começar!</p>
 
     <!-- ===== FORMULÁRIO ===== -->
     <form id="formPrecos" action="https://formsubmit.co/ingles.youcansecretaria@gmail.com" method="POST">
+
       <input type="hidden" name="_next" value="https://formsubmit.co/thanks">
       <input type="hidden" name="_captcha" value="false">
 
+      <!-- Tipo de pessoa -->
       <label>Você é o aluno ou o responsável?</label>
       <select id="tipoPessoa" name="Tipo de pessoa" required>
         <option value="">Selecione</option>
@@ -48,30 +53,53 @@
         <option value="responsavel">Sou o responsável</option>
       </select>
 
+      <!-- Nome do aluno -->
       <div id="campoNomeAluno" style="display:none;">
         <label>Nome do aluno:</label>
         <input type="text" name="Nome do aluno" placeholder="Digite o nome do aluno">
       </div>
 
+      <!-- Idade -->
       <div id="campoIdade" style="display:none;">
         <label>Idade do aluno:</label>
         <input type="number" id="idadeAluno" name="Idade" min="1" max="100" placeholder="Ex: 15">
       </div>
 
+      <!-- Nome do responsável -->
       <div id="campoResponsavel" style="display:none;">
         <label>Nome do responsável:</label>
         <input type="text" name="Nome do responsável" placeholder="Digite o nome do responsável">
       </div>
 
+      <!-- Email -->
       <label>E-mail:</label>
       <input type="email" name="E-mail" required placeholder="Digite seu e-mail">
 
+      <!-- Telefone -->
       <label>Telefone:</label>
       <input type="tel" name="Telefone" required placeholder="(DDD) 90000-0000">
 
+      <!-- Idioma -->
       <label>Idioma desejado:</label>
       <select name="Idioma" required>
         <option value="Inglês" selected>Inglês</option>
+      </select>
+
+      <!-- Período desejado -->
+      <label>Período desejado para estudar inglês:</label>
+      <select name="Período desejado" required>
+        <option value="">Selecione</option>
+        <option value="Manhã">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+      </select>
+
+      <!-- Modalidade -->
+      <label>Modalidade:</label>
+      <select name="Modalidade" required>
+        <option value="">Selecione</option>
+        <option value="Presencial">Presencial</option>
+        <option value="Online (somente adultos)">Online (somente adultos)</option>
       </select>
 
       <button type="submit" class="btn-primary">Receber valores</button>
@@ -84,59 +112,59 @@
     <p>As mensagens foram encaminhadas para o nosso e-mail e, dentro do prazo de até 48h, você receberá a resposta.</p>
   </section>
 
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
 
-<!-- RODAPÉ -->
-<footer class="footer">
-  <div class="container footer-container">
-    <div class="footer-column">
-      <h3>You Can Inglês</h3>
-      <p>Aprenda inglês com gamificação! Transforme seu aprendizado em diversão e dinamismo.</p>
-    </div>
+      <div class="footer-column">
+        <h3>You Can Inglês</h3>
+        <p>Aprenda inglês com gamificação! Transforme seu aprendizado em diversão e dinamismo.</p>
+      </div>
 
-    <div class="footer-column">
-      <h3>Institucional</h3>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h3>Atendimento</h3>
-      <ul>
-        <li><a href="https://wa.me/5546999253296" target="_blank">Fale Conosco</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="https://wa.me/5546999253296" target="_blank">Fale Conosco</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h3>Siga-nos nas redes</h3>
-      <div class="footer-redes">
-        <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">WhatsApp</a>
-        <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-instagram">Instagram</a>
-        <a href="https://www.youtube.com/@escolayoucan" target="_blank" class="btn-youtube">YouTube</a>
+      <div class="footer-column">
+        <h3>Siga-nos nas redes</h3>
+        <div class="footer-redes">
+          <a href="https://wa.me/5546999253296" target="_blank" class="btn-whatsapp">WhatsApp</a>
+          <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-instagram">Instagram</a>
+          <a href="https://www.youtube.com/@escolayoucan" target="_blank" class="btn-youtube">YouTube</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="newsletter">
-    <h3>Receba Novidades da You Can</h3>
-    <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
-    <form>
-      <input type="email" placeholder="Seu e-mail" required>
-      <button type="submit" class="btn-primary">Cadastrar</button>
-    </form>
-  </div>
+    <div class="newsletter">
+      <h3>Receba Novidades da You Can</h3>
+      <p>Cadastre seu e-mail e receba dicas e novidades sobre nossos cursos e eventos!</p>
+      <form>
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </form>
+    </div>
 
-  <hr>
+    <hr>
 
-  <div class="footer-creditos">
-    <p>© 2025 You Can Inglês com Gamificação | Todos os direitos reservados.</p>
-    <p>Desenvolvido por <strong>Dalton Neres – Full Stack Developer</strong></p>
-  </div>
-</footer>
+    <div class="footer-creditos">
+      <p>© 2025 You Can Inglês com Gamificação | Todos os direitos reservados.</p>
+      <p>Desenvolvido por <strong>Dalton Neres – Full Stack Developer</strong></p>
+    </div>
+  </footer>
 
   <!-- ===== SCRIPT DO FORMULÁRIO ===== -->
   <script>
@@ -167,5 +195,6 @@
       }
     });
   </script>
+
 </body>
 </html>

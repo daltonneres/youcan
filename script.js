@@ -54,26 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === modalBackdrop) fecharModal();
     });
   }
-
-  // =====================================================
-  // 💬 YOUCANTALK - Ajuste de fluxo
-  // =====================================================
-  const alunoSelect = document.getElementById('aluno-select');
-  const extraFields = document.getElementById('extra-fields');
-  const alunoMsg = document.getElementById('aluno-msg');
-
-  if (alunoSelect) {
-    alunoSelect.addEventListener('change', () => {
-      if (alunoSelect.value === 'sim') {
-        extraFields.style.display = 'none';
-        alunoMsg.style.display = 'block';
-      } else if (alunoSelect.value === 'nao') {
-        alunoMsg.style.display = 'none';
-        extraFields.style.display = 'block';
-      } else {
-        alunoMsg.style.display = 'none';
-        extraFields.style.display = 'none';
-      }
-    });
-  }
 });

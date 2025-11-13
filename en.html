@@ -71,7 +71,6 @@
       <a href="#institucional">About ▾</a>
       <ul class="submenu">
         <li><a href="#institucional">About Us</a></li>
-        <li><a href="#equipe">Team</a></li>
         <li><a href="#depoimentos">Testimonials</a></li>
       </ul>
     </li>
@@ -112,61 +111,6 @@
   <div class="container">
     <h2>About You Can</h2>
     <p>You Can is an English school with a gamified methodology that turns learning into a fun and effective experience. We offer both in-person and online classes for children, teens, and adults.</p>
-  </div>
-</section>
-
-<!-- Institutional -->
-<section id="institucional" class="institucional">
-  <div class="container">
-    <h2>Our History, Mission & Values</h2>
-
-    <div class="institucional-grid">
-      <div class="institucional-card">
-        <h3>History</h3>
-        <p>You Can was born with the purpose of transforming English learning into something light, fun, and motivating. We combine technology, gamification, and a humanized approach to spark students’ curiosity and joy in learning.</p>
-      </div>
-
-      <div class="institucional-card">
-        <h3>Mission</h3>
-        <p>To provide innovative and effective learning experiences, helping our students achieve fluency through fun and consistent practice.</p>
-      </div>
-
-      <div class="institucional-card">
-        <h3>Values</h3>
-        <ul>
-          <li>Learning with fun and purpose</li>
-          <li>Respect and empathy for each student</li>
-          <li>Constant innovation in our methodology</li>
-          <li>Commitment to real results</li>
-        </ul>
-      </div>
-
-      <div class="institucional-card">
-        <h3>Purpose</h3>
-        <p>To transform lives through global communication, showing that everyone can — and should — believe in their potential to learn English!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="resultados" class="resultados">
-  <div class="container">
-    <h2>Real Results 💪</h2>
-    <p>More than <strong>500 students</strong> have already achieved fluency with the You Can methodology!</p>
-    <div class="resultados-grid">
-      <div class="resultado-item">
-        <h3>+95%</h3>
-        <p>of students recommend You Can</p>
-      </div>
-      <div class="resultado-item">
-        <h3>+300</h3>
-        <p>students started speaking English in less than 6 months</p>
-      </div>
-      <div class="resultado-item">
-        <h3>+10</h3>
-        <p>years transforming English learning into fun</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -218,24 +162,25 @@
 <!-- ===== TOUR & LOCATION (side by side) ===== -->
 <section id="tour-location" class="video-duplo">
   <div class="container">
-    <h2>🎬 Tour & How to Get to You Can</h2>
+    <h2>🎬How to get to You Can and Tour</h2>
     <p>Take a virtual tour of our school and see how easy it is to get here!</p>
 
     <div class="videos-grid">
-      <!-- Tour -->
-      <div class="video-item">
-        <h3>🏫 School Tour</h3>
-        <video controls poster="imgs/youcanfundo.jpg">
-          <source src="videos/tuor.mp4" type="video/mp4">
-          Your browser does not support videos.
-        </video>
-      </div>
 
       <!-- How to Get Here -->
       <div class="video-item">
         <h3>📍 How to Get Here</h3>
         <video controls poster="imgs/youcanfundo.jpg">
           <source src="videos/apresentacao.mp4" type="video/mp4">
+          Your browser does not support videos.
+        </video>
+      </div>
+
+      <!-- Tour -->
+      <div class="video-item">
+        <h3>🏫 School Tour</h3>
+        <video controls poster="imgs/youcanfundo.jpg">
+          <source src="videos/tuor.mp4" type="video/mp4">
           Your browser does not support videos.
         </video>
       </div>
@@ -294,152 +239,6 @@
   <strong>You Can</strong> celebrates every achievement with you. 💫</p>
 </div>
 
-    </div>
-  </div>
-</section>
-
-<section id="quiz" class="quiz">
-  <div class="container">
-    <h2>🎯 Quick Challenge: Can You Get It Right?</h2>
-    <p>Choose the correct translation:</p>
-    <p><strong>"Eu estou aprendendo inglês."</strong></p>
-    <button class="btn-secondary" onclick="resposta(true)">I am learning English</button>
-    <button class="btn-secondary" onclick="resposta(false)">I learned English</button>
-    <p id="quiz-feedback" style="margin-top:10px;"></p>
-  </div>
-</section>
-
-<script>
-function resposta(certa) {
-  const f = document.getElementById('quiz-feedback');
-  f.innerText = certa ? "✅ Correct! You Can!" : "❌ Almost! Try again!";
-}
-</script>
-
-<!-- Team -->
-<section id="equipe" class="equipe">
-  <div class="container">
-    <h2>Our Team</h2>
-    <p>Meet the professionals passionate about teaching and turning learning into a fun and effective journey!</p>
-
-    <div class="equipe-grid">
-      <div class="equipe-card">
-        <img src="imgs/anadire.jpg" alt="Ana - Director">
-        <h3>Ana</h3>
-        <p>Director</p>
-        <p class="descricao">Responsible for managing the school and supervising the teaching teams.</p>
-      </div>
-
-      <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Daniele - Secretary">
-        <h3>Daniele</h3>
-        <p>Secretary</p>
-        <p class="descricao">Assists students and parents and manages the school’s administrative schedule.</p>
-      </div>
-
-      <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Ana Ketlyn - Secretary">
-        <h3>Ana Ketlyn</h3>
-        <p>Secretary</p>
-        <p class="descricao">Supports administrative organization and assists school operations.</p>
-      </div>
-    </div>
-
-    <h3 style="margin-top:3rem; color: var(--roxo);">Our Teachers</h3>
-
-    <div class="equipe-grid">
-      <div class="equipe-card">
-        <img src="imgs/teacheramanda.jpg" alt="Amanda - Teacher">
-        <h3>Amanda</h3>
-        <p>Teacher</p>
-        <p class="descricao">Focused on pedagogical development and dynamic lessons for students.</p>
-      </div>
-
-      <div class="equipe-card">
-        <img src="imgs/youcan.jpg" alt="Itauany - Teacher">
-        <h3>Itauany</h3>
-        <p>Teacher</p>
-        <p class="descricao">Specialist in innovative teaching methods for all ages.</p>
-      </div>
-
-      <div class="equipe-card">
-        <img src="imgs/teacheradri.jpg" alt="Adri - Teacher">
-        <h3>Adri</h3>
-        <p>Teacher</p>
-        <p class="descricao">Focuses on conversation and practical activities to engage students.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Trial Lesson -->
-<section id="aula-experimental" class="contato">
-  <div class="container">
-    <h2>Book Your Trial Lesson</h2>
-    <p>Fill in your information and get immediate contact through WhatsApp!</p>
-    <form id="form-aula">
-      <input type="text" name="nome" placeholder="Full name" required>
-      <input type="number" name="idade" placeholder="Age" required>
-      <select name="faixa" required>
-        <option value="">Select your age group</option>
-        <option value="Children (3–10)">Children (3–10)</option>
-        <option value="Teens (11–15)">Teens (11–15)</option>
-        <option value="Adults (15+)">Adults (15+)</option>
-      </select>
-      <input type="text" name="cidade" placeholder="City" required>
-      <button type="submit" class="btn-primary">Book Now</button>
-    </form>
-  </div>
-</section>
-
-<!-- YouCanTalk -->
-<section id="youcantalk" class="youcantalk">
-  <div class="container">
-    <h2>YouCanTalk 💬 Practice Your English</h2>
-    <p>Chat with our virtual assistant and practice your English in a fun and personalized way!  
-    If you’re already a You Can student, you’ll soon be able to access this exclusive tool directly.  
-    If you’re not yet a student, leave your details and contact us via WhatsApp.</p>
-
-    <form id="form-youcantalk">
-      <input type="text" name="nome" placeholder="Full name" required>
-      <input type="tel" name="telefone" placeholder="Phone number with area code" required>
-      
-      <label>Are you a You Can student?</label>
-      <select name="aluno" id="aluno-select" required>
-        <option value="">Select an option</option>
-        <option value="sim">Yes</option>
-        <option value="nao">No</option>
-      </select>
-
-      <div id="extra-fields" style="display: none;">
-        <input type="number" name="idade" placeholder="Age" required>
-        <input type="text" name="cidade" placeholder="City" required>
-      </div>
-
-      <p id="aluno-msg" class="aluno-msg" style="display:none; color: var(--azul-medio); font-weight:600; margin-top:10px;">
-        ✨ This feature will soon be available for our students.
-      </p>
-
-      <button type="submit" class="btn-primary">Access YouCanTalk</button>
-    </form>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="faq">
-  <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h3>Are the classes in-person or online?</h3>
-      <p>We offer both! Students can choose the format that best fits their schedule.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What is gamification?</h3>
-      <p>It’s the use of game elements to make learning more interactive, fun, and effective.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What age groups can participate?</h3>
-      <p>We offer courses for children (3–10), teens (11–15), and adults (15+).</p>
     </div>
   </div>
 </section>
@@ -520,6 +319,123 @@ function resposta(certa) {
         <a href="https://www.instagram.com/youcan_centrodeensino.ingles/" target="_blank" class="btn-secondary">Read Full Article</a>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- Institutional -->
+<section id="institucional" class="institucional">
+  <div class="container">
+    <h2>Our History, Mission & Values</h2>
+
+    <div class="institucional-grid">
+      <div class="institucional-card">
+        <h3>History</h3>
+        <p>You Can was born with the purpose of transforming English learning into something light, fun, and motivating. We combine technology, gamification, and a humanized approach to spark students’ curiosity and joy in learning.</p>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Mission</h3>
+        <p>To provide innovative and effective learning experiences, helping our students achieve fluency through fun and consistent practice.</p>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Values</h3>
+        <ul>
+          <li>Learning with fun and purpose</li>
+          <li>Respect and empathy for each student</li>
+          <li>Constant innovation in our methodology</li>
+          <li>Commitment to real results</li>
+        </ul>
+      </div>
+
+      <div class="institucional-card">
+        <h3>Purpose</h3>
+        <p>To transform lives through global communication, showing that everyone can — and should — believe in their potential to learn English!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resultados" class="resultados">
+  <div class="container">
+    <h2>Real Results 💪</h2>
+    <p>More than <strong>500 students</strong> have already achieved fluency with the You Can methodology!</p>
+    <div class="resultados-grid">
+      <div class="resultado-item">
+        <h3>+95%</h3>
+        <p>of students recommend You Can</p>
+      </div>
+      <div class="resultado-item">
+        <h3>+300</h3>
+        <p>students started speaking English in less than 6 months</p>
+      </div>
+      <div class="resultado-item">
+        <h3>+10</h3>
+        <p>years transforming English learning into fun</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="quiz">
+  <div class="container">
+    <h2>🎯 Quick Challenge: Can You Get It Right?</h2>
+    <p>Choose the correct translation:</p>
+    <p><strong>"Eu estou aprendendo inglês."</strong></p>
+    <button class="btn-secondary" onclick="resposta(true)">I am learning English</button>
+    <button class="btn-secondary" onclick="resposta(false)">I learned English</button>
+    <p id="quiz-feedback" style="margin-top:10px;"></p>
+  </div>
+</section>
+
+<script>
+function resposta(certa) {
+  const f = document.getElementById('quiz-feedback');
+  f.innerText = certa ? "✅ Correct! You Can!" : "❌ Almost! Try again!";
+}
+</script>
+
+<!-- Trial Lesson -->
+<section id="aula-experimental" class="contato">
+  <div class="container">
+    <h2>Schedule Your Trial Lesson</h2>
+    <p>Fill in your information and receive an immediate WhatsApp message!</p>
+
+    <form id="form-trial">
+      <input type="text" name="name" placeholder="Full name" required>
+      <input type="number" name="age" placeholder="Age" required>
+
+      <!-- Updated field -->
+      <select name="period" required>
+        <option value="">Select your preferred time</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Saturday - morning">Saturday — Morning</option>
+      </select>
+
+      <input type="text" name="city" placeholder="City" required>
+      <button type="submit" class="btn-primary">Schedule Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Are the classes in-person or online?</h3>
+      <p>We offer both! Students can choose the format that best fits their schedule.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is gamification?</h3>
+      <p>It’s the use of game elements to make learning more interactive, fun, and effective.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What age groups can participate?</h3>
+      <p>We offer courses for children (3–10), teens (11–15), and adults (15+).</p>
     </div>
   </div>
 </section>
