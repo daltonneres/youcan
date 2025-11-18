@@ -94,6 +94,30 @@
       Fale Conosco
     </a>
   </div>
+
+  <!-- ===== BANNER ROTATIVO ===== -->
+<section class="banner-slider">
+  <div class="slide fade">
+    <img src="banners/1.svg" alt="Banner 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="banners/2.svg" alt="Banner 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="banners/3.svg" alt="Banner 3">
+  </div>
+
+    <div class="slide fade">
+    <img src="banners/4.svg" alt="Banner 4">
+  </div>
+
+    <div class="slide fade">
+    <img src="banners/5.svg" alt="Banner 5">
+  </div>
+</section>
+
 </header>
   <main>
 <!-- Cursos -->
@@ -667,6 +691,26 @@ sendBtn.addEventListener('click', () => {
 chatInput.addEventListener('keypress', (e) => {
   if(e.key === 'Enter' && chatInput.value.trim() !== '') { nextStep(chatInput.value.trim()); chatInput.value = ''; }
 });
+</script>
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].classList.add("active");
+
+  setTimeout(showSlides, 4000);
+}
+
+showSlides();
 </script>
 
 <!-- RODAPÉ -->

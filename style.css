@@ -2132,3 +2132,44 @@ html, body {
     aspect-ratio: 1 / 1;
   }
 }
+
+/* ===== BANNER ROTATIVO (Ajustado sem corte e sem fundo preto) ===== */
+.banner-slider {
+  width: 100%;
+  max-width: 1400px;
+  aspect-ratio: 2 / 0.7;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+  background: #5b0ef0; /* usa a cor do site para remover o "preto" */
+  border-radius: 0;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* não corta */
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .banner-slider {
+    aspect-ratio: 16 / 9;
+    background: #5b0ef0;
+  }
+
+  .banner-slider img {
+    object-fit: cover; /* no celular fica perfeito */
+  }
+}
