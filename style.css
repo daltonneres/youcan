@@ -2162,14 +2162,40 @@ html, body {
   opacity: 1;
 }
 
-/* ===== Mobile ===== */
+/* ===== MOBILE OPTIMIZADO ===== */
 @media (max-width: 768px) {
   .banner-slider {
-    aspect-ratio: 16 / 9;
-    background: #5b0ef0;
+    aspect-ratio: 4 / 5; /* mais vertical — perfeito para essa arte */
+    background: #5b0ef0; /* cor do fundo */
   }
 
   .banner-slider img {
-    object-fit: cover; /* no celular fica perfeito */
+    object-fit: contain; /* não corta mais */
+    padding: 10px; /* afasta das bordas e melhora visual */
+  }
+}
+
+/* ===== HEADER - MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* força tudo lado a lado */
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 55px; /* tamanho ideal para mobile */
+    height: auto;
+  }
+
+  .menu-toggle {
+    font-size: 32px;
+    padding: 5px 10px;
+  }
+
+  .nav {
+    display: none; /* menu escondido no mobile */
   }
 }
