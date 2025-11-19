@@ -94,17 +94,32 @@
       Contact Us
     </a>
   </div>
-</header>
-  <main>
 
-<!-- Banner -->
-<section id="home" class="banner">
-  <div class="banner-content">
-    <h1>Learn English with Gamification and Fun!</h1>
-    <p>Turn your learning into an engaging and dynamic experience. In-person and online classes!</p>
-    <a href="#cursos" class="btn-primary">Explore Our Courses</a>
+  <!-- ===== BANNER ROTATIVO ===== -->
+<section class="banner-slider">
+  <div class="slide fade">
+    <img src="bannersen/1.svg" alt="Banner 1" title="Banner 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="bannersen/2.svg" alt="Banner 2" title="Banner 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="bannersen/3.svg" alt="Banner 3" title="Banner 3">
+  </div>
+
+    <div class="slide fade">
+    <img src="bannersen/4.svg" alt="Banner 4" title="Banner 4">
+  </div>
+
+    <div class="slide fade">
+    <img src="bannersen/5.svg" alt="Banner 5" title="Banner 5">
   </div>
 </section>
+
+</header>
+  <main>
 
 <!-- Courses -->
 <section id="cursos" class="cursos">
@@ -641,6 +656,26 @@ sendBtn.addEventListener('click', () => {
 chatInput.addEventListener('keypress', (e) => {
   if(e.key === 'Enter' && chatInput.value.trim() !== '') { nextStep(chatInput.value.trim()); chatInput.value = ''; }
 });
+</script>
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].classList.add("active");
+
+  setTimeout(showSlides, 4000);
+}
+
+showSlides();
 </script>
 
 <!-- Footer -->

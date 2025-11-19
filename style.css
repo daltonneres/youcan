@@ -2175,27 +2175,39 @@ html, body {
   }
 }
 
-/* ===== HEADER - MOBILE FIX ===== */
+/* ================================
+   CORREÇÃO DO HEADER NO MOBILE
+   ================================ */
 @media (max-width: 768px) {
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* força tudo lado a lado */
-    flex-wrap: nowrap;
-    gap: 10px;
+
+  .header {
+    padding: 0.6rem 0; /* deixa mais compacto */
   }
 
+  .header-container {
+    display: flex;
+    flex-direction: row;          /* garante lado a lado */
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+
+  /* Ajusta o logo */
   .logo {
-    width: 55px; /* tamanho ideal para mobile */
+    width: 58px;     /* tamanho ideal */
     height: auto;
   }
 
+  /* Botão do menu mobile */
   .menu-toggle {
     font-size: 32px;
-    padding: 5px 10px;
+    padding: 4px 10px;
+    margin-left: auto; /* gruda no lado direito */
   }
 
-  .nav {
-    display: none; /* menu escondido no mobile */
+  /* Esconde o menu padrão no mobile */
+  nav.nav {
+    display: none;
   }
 }
