@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://youcanescoladeingles.com.br/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas internas -->
+  <url>
+    <loc>https://youcanescoladeingles.com.br/kids.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://youcanescoladeingles.com.br/teens.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://youcanescoladeingles.com.br/adults.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://youcanescoladeingles.com.br/precos.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://youcanescoladeingles.com.br/en.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

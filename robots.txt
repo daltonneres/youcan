@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youcanescoladeingles.com.br/sitemap.xml
