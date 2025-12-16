@@ -226,15 +226,15 @@ section h2 {
 
 /* Imagens específicas */
 .curso-card.kids {
-  background-image: url('imgs/youcanfundo.jpg');
+  background-image: url('imgs/kids.png');
 }
 
 .curso-card.teens {
-  background-image: url('imgs/youcanfundo.jpg');
+  background-image: url('imgs/teens.png');
 }
 
 .curso-card.adults {
-  background-image: url('imgs/youcanfundo.jpg');
+  background-image: url('imgs/adults.png');
 }
 
 /* Overlay com conteúdo */
