@@ -2243,3 +2243,59 @@ html, body {
     aspect-ratio: 16 / 9;
   }
 }
+
+/* Grid dos cursos */
+.curso-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Card base */
+.curso-card {
+  position: relative;
+  height: 420px; /* altura fixa para todos */
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Overlay ocupa todo o card */
+.curso-card .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+
+/* Grupo de texto centralizado verticalmente */
+.curso-card .overlay h3,
+.curso-card .overlay p {
+  text-align: center;
+}
+
+/* Texto centralizado no meio do card */
+.curso-card .overlay h3 {
+  margin-bottom: 16px;
+}
+
+.curso-card .overlay p {
+  margin: 0;
+}
+
+/* Wrapper virtual para centralizar texto */
+.curso-card .overlay {
+  justify-content: center;
+}
+
+/* Botão fixo embaixo */
+.curso-card .overlay a {
+  margin-top: auto;
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+
