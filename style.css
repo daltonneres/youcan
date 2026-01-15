@@ -2376,3 +2376,46 @@ html, body {
     font-size: 0.95rem;
   }
 }
+
+/* ===== AJUSTE HEADER MOBILE ===== */
+@media (max-width: 768px) {
+
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header-container {
+    padding: 0.8rem 1rem;
+    min-height: auto;
+  }
+
+  .btn-whatsapp {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-title {
+    padding: 1.2rem 1rem 1rem;
+  }
+
+  .hero-title h1 {
+    font-size: 1.45rem;
+  }
+
+  .hero-title h1 span {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-cta {
+    padding: 1.2rem 1rem 1.8rem;
+  }
+
+}
