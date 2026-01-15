@@ -2309,9 +2309,9 @@ html, body {
 .hero-subtitle {
   max-width: 750px;
   margin: 0 auto 1.8rem;
-  font-size: 1.05rem;
-  color: #ffffff; /* texto branco */
-  line-height: 1.6;
+  font-size: 1.2rem; /* AUMENTOU */
+  color: #ffffff;
+  line-height: 1.65;
   opacity: 0.95;
 }
 
@@ -2357,10 +2357,10 @@ html, body {
 
 .hero-title h1 span {
   display: block;
-  font-size: 1.05rem; /* DIMINUIU */
+  font-size: 1.25rem; /* AUMENTOU */
   font-weight: 500;
-  margin-top: 0.4rem;
-  opacity: 0.9;
+  margin-top: 0.5rem;
+  opacity: 0.95;
 }
 
 @media (max-width: 768px) {
